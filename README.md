@@ -1,1 +1,1 @@
-# CMOS-circuit-design
+# CMOS circuit design and SPICE simulation
