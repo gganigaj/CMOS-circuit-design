@@ -175,9 +175,15 @@ where,<br>
    <img width="205" height="59" alt="image" src="https://github.com/user-attachments/assets/396106a3-1765-4b10-b049-e519495ee4a7" /><br>
    Integrate over length'L' on LHS and over drain-source voltage Vds on RHS,we get the below<br>
    <img width="192" height="60" alt="image" src="https://github.com/user-attachments/assets/e6982f21-0ab4-462f-acd9-fc48799aeb26" /><br>
-   Considering kn= unCox, where kn is the process transconductance, which determines how effectively the device converts gate voltage into drain current.
+   Considering kn= unCox, where kn is the process transconductance, which determines how effectively the device converts gate voltage into drain current.<br>
+   <img width="153" height="13" alt="image" src="https://github.com/user-attachments/assets/bf75a3ca-57cc-404f-b469-5f6eb327df70" /><br>
+Therefore, for all values of VDS ≤ (VGS − Vt), the MOSFET operates in the resistive (linear) region.In this region, the channel is continuous from source to drain, and the device behaves like a voltage-controlled resistor.<br>
 
-   
+### 7-L4 SPICE conclusion to resistive operation<br>
+   To study how the gate-to-source voltage (VGS) and drain-to-source voltage (VDS) affect the drain current (ID), we examine several values of both voltages.     For a fixed VGS, the MOSFET operates in the linear (triode) region as long as VDS is less than (VGS − Vt).<br>
+   To determine ID for different VGS values, we select one specific VGS and vary VDS from 0 up to (VGS − Vt). Within this range, the drain current is described by the linear-region equation. SPICE simulations can then be performed to generate and confirm the ID–VDS curves corresponding to each chosen VGS.<br>
+   <img width="624" height="160" alt="image" src="https://github.com/user-attachments/assets/736002a0-28fd-4709-a2f9-a31958f4fa58" />
+
 
    
                  
