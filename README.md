@@ -120,7 +120,72 @@ On the application of gate voltage to the Vsb=0 and Vsb=+ve.while in Vsb=+ve the
        </div>
         </div>
 To make the surface inversion in Vsb +ve the semiconductor surface inverts to n-type material at voltage Vgs=Vto+v1.In the presence of substrate bias 'Vsb',additional potential is required for strong inversion.
-    
+![WhatsApp Image 2026-02-18 at 3 21 11 PM](https://github.com/user-attachments/assets/c50135ce-2c1a-4948-86e6-193d0548e64a)<br>
+- Vto is the threshold voltage at Vsb=0
+- γ is the body effect coefficient, which indicates how strongly the threshold voltage changes with body bias. It depends on substrate doping and oxide capacitance.<BR>
+<img width="299" height="136" alt="image" src="https://github.com/user-attachments/assets/fad87888-91c0-4eed-8065-04cd1ad1cf43" /><br>
+- φF is the Fermi potential of the substrate, representing the energy difference between the intrinsic level and the Fermi level in the semiconductor.<br>
+  <img width="312" height="68" alt="image" src="https://github.com/user-attachments/assets/aa9add35-0e7e-4de9-8245-40ab6bde1dad" /><br>
+- These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.<br>
+
+## NMOS resistive region and saturation region of operation
+### 4-L1 Resistive region of operation with small drain-source voltage<br>
+  when the Vgs>Vt ,the channel width will increases more and it shows the induced charges(Qi) is proportional to the (Vgs-Vt).This excess voltage, known as the overdrive voltage, creates additional mobile electrons in the channel, increasing the drain current.<br>
+   <div align="center">
+  <img width="347" height="236" alt="image" src="https://github.com/user-attachments/assets/8e478cc9-8522-45e7-8697-5cc33e3bf689" />
+   <div align="center">
+   dia:11 Induced charges
+    </div>
+   </div>
+   Let  Vgs=1V , small Vds(0.05V) and Vt(NMOS)=0.45V.<br>
+   Since VGS > Vt, the transistor is ON and a conducting inversion channel is formed between source and drain.Because the source is grounded and the drain is at a positive voltage, a voltage gradient develops along the channel from source to drain.<br>
+If we plot a graph with the x-axis as the channel length (from 0 to L, considering L ≈ Leff) and the y-axis representing channel charge/strength:<br>
+        In the absence of VDS, every point along the channel sees the same gate overdrive voltage (VGS − Vt).<br>
+        When VDS is applied, the local channel potential becomes V(x), which varies from 0 at the source to VDS at the drain.<br>
+        Therefore, the effective overdrive at any point x becomes (VGS − V(x) − Vt), meaning the channel charge gradually decreases from source to drain.
+        <div align="center">
+        <img width="334" height="237" alt="image" src="https://github.com/user-attachments/assets/0ead9e30-68d9-41c6-b59a-5a38b5402866" />
+          <div align="center">
+           dia:12 
+          </div>
+ </div>
+channel length(L):The physical distance between the source and drain defined during fabrication (layout dimension).<br>
+ Effective Channel Length (Leff) :The actual conductive channel length after accounting for lateral diffusion and short-channel effects<br>
+
+ ### 5-L2 Drift current theory
+ In the channel (yellow region below), the induced inversion charge at any point x depends on the local gate overdrive voltage.Since the channel potential varies along its length, the effective gate voltage at position x is VGS − V(x).Therefore, the inversion charge per unit area at point x is proportional to the local overdrive voltage.<br>
+  <div align="center">
+ <img width="542" height="377" alt="image" src="https://github.com/user-attachments/assets/eeccb8e7-d51e-4ffc-b070-b26da6d4c8d4" />
+    <div align="center">
+     dia:13 Vgs-V(x)
+   </div>
+     </div>
+     <img width="191" height="200" alt="image" src="https://github.com/user-attachments/assets/4c4e229a-fdd5-49b6-9803-293a8e045a63" /> <br>
+There are two types of current:<br>
+- Drift current - Current that flows due to an applied electric field, which causes charge carriers to move in a specific direction.<br>
+- Diffusion current - Current that flows due to a concentration gradient, where charge carriers move from a region of higher concentration to a region of lower concentration.<br>
+<img width="520" height="297" alt="image" src="https://github.com/user-attachments/assets/2472fe34-2d80-4c54-94bb-312c0deab373" /><br>
+Drift current (Id) = Velocity of charge carriers x Available charge (over the channel width)<br>
+
+### 6-L3 Drain current model for linear region of operation
+Drift current (Id)=-Vn(x).Qi(x).W<br>
+where,<br>
+   Velocity Vn(x)= mobility.electric field<br>
+   Substituting and integrating dx over channel length L will give the V-I relation of NMOS transistor.<br>
+   <img width="205" height="59" alt="image" src="https://github.com/user-attachments/assets/396106a3-1765-4b10-b049-e519495ee4a7" /><br>
+   Integrate over length'L' on LHS and over drain-source voltage Vds on RHS,we get the below<br>
+   <img width="192" height="60" alt="image" src="https://github.com/user-attachments/assets/e6982f21-0ab4-462f-acd9-fc48799aeb26" /><br>
+   Considering kn= unCox, where kn is the process transconductance, which determines how effectively the device converts gate voltage into drain current.
+
+   
+
+   
+                 
+       
+     
+
+ 
+
 
      
  
