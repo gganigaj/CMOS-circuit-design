@@ -20,6 +20,9 @@ Version	: Ubuntu 18.04 Bionic Beaver (64-bit)
 - Click Open
 - Click Next
 - Click Finish<br>
+### 5. Start the virtual mode
+- select the created VM
+- click start
 ## NgspiceSky130-Day 1-Basics of NMOS Drain current(Id) vs Drain-to-source voltage(Vds)<br>
 ### **Introduction to Circuit Design and SPICE simulation**
 ### 0-L1 Why do we need SPICE simulations?<br>
