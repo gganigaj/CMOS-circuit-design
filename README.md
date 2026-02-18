@@ -14,12 +14,12 @@ Version	: Ubuntu 18.04 Bionic Beaver (64-bit)
 - Assign RAM as required (Recommended: 4096 MB)
 - Click Next
 ### 4. Attach CMOS VDI File
-Select Use an existing virtual hard disk file
-Click the folder icon
-Browse to the unzipped CMOS VDI file
-Click Open
-Click Next
-Click Finish<br>
+- Select Use an existing virtual hard disk file
+- Click the folder icon
+- Browse to the unzipped CMOS VDI file
+- Click Open
+- Click Next
+- Click Finish<br>
 ## NgspiceSky130-Day 1-Basics of NMOS Drain current(Id) vs Drain-to-source voltage(Vds)<br>
 ### **Introduction to Circuit Design and SPICE simulation**
 ### 0-L1 Why do we need SPICE simulations?<br>
@@ -63,7 +63,7 @@ The connection of PMOS and NMOS transistor will gives as the output of AND,OR,NA
   In that delay table the value of input and output will interset then that will consider as the delay time. The import note the each PMOS and NMOS transistor may have differnt shades from the nearby transistor.<br>
   The delays are actually comes from the SPICE simulations. The delay models are accurate by having the same input and output load which is matching in the SPICE simulation we get the delay values.<br>
  
-  ###  L2 Introduction to basic element in Circuit design-NMOS <br>
+  ###  1-L2 Introduction to basic element in Circuit design-NMOS <br>
    The NMOS is a four terminal device, which consist of P-substrate. if it is PMOS then it will have an N-substrate.
      <div align="center">
      <img width="559" height="489" alt="Screenshot 2026-02-18 114450" src="https://github.com/user-attachments/assets/a6f35d2a-c338-499c-bf3d-916148da5c9e" />
@@ -86,9 +86,10 @@ if Vgs=0 and the drain,source,bulk are connected to the ground.The substrate-sou
    <div align="center">
    dia:7 Vgs>0
    </div>
-   </div>
-
+ </div> 
 When we are apply small voltage to the gate,it will repell all the positive charge which is present over the substrate.mobile holes are repelled by the +ve charge at 'G' and they leave behind the -ve charges.The -ve charge will start to accumulate.<br>
+
+### 2-L3 Strong inversion and threshold voltage<br>
 In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur.Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion.<br>
 The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt).
  <div align="center">
@@ -97,6 +98,7 @@ The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt)
 dia:8 strong inversion
  </div>
   </div>
+  
      
  
 
