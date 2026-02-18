@@ -21,8 +21,8 @@ Click Open
 Click Next
 Click Finish<br>
 ## NgspiceSky130-Day 1-Basics of NMOS Drain current(Id) vs Drain-to-source voltage(Vds)<br>
-### Introduction to Circuit Design and SPICE simulation<br>
-#### 0-L1 Why do we need SPICE simulations?<br>
+### **Introduction to Circuit Design and SPICE simulation**
+### 0-L1 Why do we need SPICE simulations?<br>
 About circuit,let as cosider an inverter which has PMOS and NMOS.the drain of both are tigh together and the voltage is connected to both NMOS AND PMOS.<br>
  <div align="center">
    <img width="220" height="241" alt="image" src="https://github.com/user-attachments/assets/1bac8540-e2d7-4607-9623-d16754ad19ab" />
@@ -61,7 +61,42 @@ The connection of PMOS and NMOS transistor will gives as the output of AND,OR,NA
    </div> 
    </div> 
   In that delay table the value of input and output will interset then that will consider as the delay time. The import note the each PMOS and NMOS transistor may have differnt shades from the nearby transistor.<br>
-  The delays are actually comes from the SPICE simulations. The delay models are accurate by having the same input and output load which is matching in the SPICE simulation we get the delay values.
+  The delays are actually comes from the SPICE simulations. The delay models are accurate by having the same input and output load which is matching in the SPICE simulation we get the delay values.<br>
+ 
+  ###  L2 Introduction to basic element in Circuit design-NMOS <br>
+   The NMOS is a four terminal device, which consist of P-substrate. if it is PMOS then it will have an N-substrate.
+     <div align="center">
+     <img width="559" height="489" alt="Screenshot 2026-02-18 114450" src="https://github.com/user-attachments/assets/a6f35d2a-c338-499c-bf3d-916148da5c9e" />
+     <div align="center">
+     dia:5 structure of NMOS devic 
+     </div>
+       </div>
+       The p-substrate has an two isolation region which are used to differentiate between two transistor behaviour. It has an n+ diffusion region, which are called as source and drain terminal. The gate oxide is placed over the p-substrate. The poly-si or metal gate is placed on tha gate oxide layer.<br>
+ #### Threshold voltage
+The minimum gate to source voltage (VGS) needed to create a conductive channel between the drain and source.
+<div align="center">
+ <img width="245" height="182" alt="image" src="https://github.com/user-attachments/assets/c6c31b23-6fd5-4c62-9d0a-1b63bb4084d1" />
+ <div align="center">
+  dia:6 Vgs=0
+  </div>
+   </div>
+if Vgs=0 and the drain,source,bulk are connected to the ground.The substrate-source and substrate-drain will form p-n junction diode.now both the junctions are in off mode so, source-drain resistance is high.<br>
+ <div align="center">
+  <img width="244" height="195" alt="image" src="https://github.com/user-attachments/assets/a188174f-d286-44f7-a274-1e260c20010f" />
+   <div align="center">
+   dia:7 Vgs>0
+   </div>
+   </div>
+
+When we are apply small voltage to the gate,it will repell all the positive charge which is present over the substrate.mobile holes are repelled by the +ve charge at 'G' and they leave behind the -ve charges.The -ve charge will start to accumulate.<br>
+In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur.Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion.<br>
+The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt).
+ <div align="center">
+<img width="251" height="202" alt="image" src="https://github.com/user-attachments/assets/ba3f74c6-ec46-46af-88d2-1ad7d8d5ef07" />
+ <div align="center">
+dia:8 strong inversion
+ </div>
+  </div>
      
  
 
