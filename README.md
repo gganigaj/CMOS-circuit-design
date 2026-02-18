@@ -101,7 +101,27 @@ The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt)
 dia:8 strong inversion
  </div>
   </div>
-  
+  When the Vgs is further increases, the channel width get increases but there is no change in depletion layer width.The electrons from heavily doped n+ source region are drawn in region under gate.The continuous n-channel formation from source to drain,whose conductivity is modulated by Vgs.<br>
+  <div align="center">
+   <img width="566" height="222" alt="Screenshot 2026-02-18 144543" src="https://github.com/user-attachments/assets/8c9429be-ac3f-4c64-82f3-c8427b3fba5a" />
+    <div align="center">
+    dia:9 Vsb=0 and Vsb=+ve
+     </div>
+      </div>
+The above diagram shows that the Vsb=0 and Vsb=+ve value.The +ve Vsb will have the high depletion width compare to the Vsb=0.Because there is a additional reverse bias that is applied to the +Vsb the n-type area is connected to the positive source and p-substrate is connected to the negative souce.<br>
+
+### 3-L4 Threshold voltage with positive substrate potential
+On the application of gate voltage to the Vsb=0 and Vsb=+ve.while in Vsb=+ve the depletion region increases the accumulation of negative charge in source is increases.<br>
+    Due to +ve Vsb,few charges from channel are pulled towards source and there is no surface inversion will happen at +ve Vsb. while in Vsb=0 the semiconductor surface inverts to n-type material at voltage Vgs=Vto.
+    <div align="center">
+    <img width="556" height="232" alt="image" src="https://github.com/user-attachments/assets/b64359ca-a2ce-4791-a924-4afb871dafc1" />
+      <div align="center">
+      dia:10 surface inversion 
+       </div>
+        </div>
+To make the surface inversion in Vsb +ve the semiconductor surface inverts to n-type material at voltage Vgs=Vto+v1.In the presence of substrate bias 'Vsb',additional potential is required for strong inversion.
+    
+
      
  
 
