@@ -26,7 +26,7 @@ Version	: Ubuntu 18.04 Bionic Beaver (64-bit)
 ## NgspiceSky130-Day 1-Basics of NMOS Drain current(Id) vs Drain-to-source voltage(Vds)<br>
 ### **Introduction to Circuit Design and SPICE simulation**
 ### 0-L1 Why do we need SPICE simulations?<br>
-About circuit,let as cosider an inverter which has PMOS and NMOS.the drain of both are tigh together and the voltage is connected to both NMOS AND PMOS.<br>
+   About circuit,let as cosider an inverter which has PMOS and NMOS.the drain of both are tigh together and the voltage is connected to both NMOS AND PMOS.<br>
  <div align="center">
    <img width="220" height="241" alt="image" src="https://github.com/user-attachments/assets/1bac8540-e2d7-4607-9623-d16754ad19ab" />
     <div align="center">
@@ -73,53 +73,56 @@ The connection of PMOS and NMOS transistor will gives as the output of AND,OR,NA
      <div align="center">
      dia:5 structure of NMOS devic 
      </div>
-       </div>
+       </div><br>
        The p-substrate has an two isolation region which are used to differentiate between two transistor behaviour. It has an n+ diffusion region, which are called as source and drain terminal. The gate oxide is placed over the p-substrate. The poly-si or metal gate is placed on tha gate oxide layer.<br>
- #### Threshold voltage
-The minimum gate to source voltage (VGS) needed to create a conductive channel between the drain and source.
+       
+ #### Threshold voltage <br>
+  The minimum gate to source voltage (VGS) needed to create a conductive channel between the drain and source. <br>
 <div align="center">
  <img width="245" height="182" alt="image" src="https://github.com/user-attachments/assets/c6c31b23-6fd5-4c62-9d0a-1b63bb4084d1" />
  <div align="center">
   dia:6 Vgs=0
   </div>
-   </div>
-if Vgs=0 and the drain,source,bulk are connected to the ground.The substrate-source and substrate-drain will form p-n junction diode.now both the junctions are in off mode so, source-drain resistance is high.<br>
+   </div><br>
+     if Vgs=0 and the drain,source,bulk are connected to the ground.The substrate-source and substrate-drain will form p-n junction diode.now both the junctions are in off mode so, source-drain resistance is high.<br>
  <div align="center">
   <img width="244" height="195" alt="image" src="https://github.com/user-attachments/assets/a188174f-d286-44f7-a274-1e260c20010f" />
    <div align="center">
    dia:7 Vgs>0
    </div>
- </div> 
-When we are apply small voltage to the gate,it will repell all the positive charge which is present over the substrate.mobile holes are repelled by the +ve charge at 'G' and they leave behind the -ve charges.The -ve charge will start to accumulate.<br>
+ </div> <br>
+    When we are apply small voltage to the gate,it will repell all the positive charge which is present over the substrate.mobile holes are repelled by the +ve charge at 'G' and they leave behind the -ve charges.The -ve charge will start to accumulate.<br>
 
-### 2-L3 Strong inversion and threshold voltage<br>
-In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur.Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion.<br>
-The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt).
+### 2-L3 Strong inversion and threshold voltage <br>
+      In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur. <br>
+      Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion.<br>
+The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt).<br>
  <div align="center">
 <img width="251" height="202" alt="image" src="https://github.com/user-attachments/assets/ba3f74c6-ec46-46af-88d2-1ad7d8d5ef07" />
  <div align="center">
 dia:8 strong inversion
  </div>
-  </div>
-  When the Vgs is further increases, the channel width get increases but there is no change in depletion layer width.The electrons from heavily doped n+ source region are drawn in region under gate.The continuous n-channel formation from source to drain,whose conductivity is modulated by Vgs.<br>
+  </div><br>   
+    When the Vgs is further increases, the channel width get increases but there is no change in depletion layer width.The electrons from heavily doped n+ source region are drawn in region under gate.<br>
+    The continuous n-channel formation from source to drain,whose conductivity is modulated by Vgs.<br>
   <div align="center">
    <img width="566" height="222" alt="Screenshot 2026-02-18 144543" src="https://github.com/user-attachments/assets/8c9429be-ac3f-4c64-82f3-c8427b3fba5a" />
     <div align="center">
     dia:9 Vsb=0 and Vsb=+ve
      </div>
-      </div>
-The above diagram shows that the Vsb=0 and Vsb=+ve value.The +ve Vsb will have the high depletion width compare to the Vsb=0.Because there is a additional reverse bias that is applied to the +Vsb the n-type area is connected to the positive source and p-substrate is connected to the negative souce.<br>
+      </div><br>
+   The above diagram shows that the Vsb=0 and Vsb=+ve value.The +ve Vsb will have the high depletion width compare to the Vsb=0.Because there is a additional reverse bias that is applied to the +Vsb the n-type area is connected to the positive source and p-substrate is connected to the negative souce.<br>
 
-### 3-L4 Threshold voltage with positive substrate potential
-On the application of gate voltage to the Vsb=0 and Vsb=+ve.while in Vsb=+ve the depletion region increases the accumulation of negative charge in source is increases.<br>
-    Due to +ve Vsb,few charges from channel are pulled towards source and there is no surface inversion will happen at +ve Vsb. while in Vsb=0 the semiconductor surface inverts to n-type material at voltage Vgs=Vto.
+### 3-L4 Threshold voltage with positive substrate potential <br>
+    On the application of gate voltage to the Vsb=0 and Vsb=+ve.while in Vsb=+ve the depletion region increases the accumulation of negative charge in source is increases. <br>
+    Due to +ve Vsb,few charges from channel are pulled towards source and there is no surface inversion will happen at +ve Vsb. while in Vsb=0 the semiconductor surface inverts to n-type material at voltage Vgs=Vto. <br>
     <div align="center">
     <img width="556" height="232" alt="image" src="https://github.com/user-attachments/assets/b64359ca-a2ce-4791-a924-4afb871dafc1" />
       <div align="center">
       dia:10 surface inversion 
        </div>
         </div>
-To make the surface inversion in Vsb +ve the semiconductor surface inverts to n-type material at voltage Vgs=Vto+v1.In the presence of substrate bias 'Vsb',additional potential is required for strong inversion.
+    To make the surface inversion in Vsb +ve the semiconductor surface inverts to n-type material at voltage Vgs=Vto+v1.In the presence of substrate bias 'Vsb',additional potential is required for strong inversion.</br>
 ![WhatsApp Image 2026-02-18 at 3 21 11 PM](https://github.com/user-attachments/assets/c50135ce-2c1a-4948-86e6-193d0548e64a)<br>
 - Vto is the threshold voltage at Vsb=0
 - γ is the body effect coefficient, which indicates how strongly the threshold voltage changes with body bias. It depends on substrate doping and oxide capacitance.<BR>
@@ -128,7 +131,7 @@ To make the surface inversion in Vsb +ve the semiconductor surface inverts to n-
   <img width="312" height="68" alt="image" src="https://github.com/user-attachments/assets/aa9add35-0e7e-4de9-8245-40ab6bde1dad" /><br>
 - These values are obtained from the foundry and fed into the SPICE model for device modelling and simulation.<br>
 
-## NMOS resistive region and saturation region of operation
+## NMOS resistive region and saturation region of operation<br>
 ### 4-L1 Resistive region of operation with small drain-source voltage<br>
   when the Vgs>Vt ,the channel width will increases more and it shows the induced charges(Qi) is proportional to the (Vgs-Vt).This excess voltage, known as the overdrive voltage, creates additional mobile electrons in the channel, increasing the drain current.<br>
    <div align="center">
@@ -161,7 +164,7 @@ channel length(L):The physical distance between the source and drain defined dur
    </div>
      </div>
      <img width="191" height="200" alt="image" src="https://github.com/user-attachments/assets/4c4e229a-fdd5-49b6-9803-293a8e045a63" /> <br>
-There are two types of current:<br>
+There are two types of current:
 - Drift current - Current that flows due to an applied electric field, which causes charge carriers to move in a specific direction.<br>
 - Diffusion current - Current that flows due to a concentration gradient, where charge carriers move from a region of higher concentration to a region of lower concentration.<br>
 <img width="520" height="297" alt="image" src="https://github.com/user-attachments/assets/2472fe34-2d80-4c54-94bb-312c0deab373" /><br>
@@ -192,9 +195,8 @@ Because inversion charge exists continuously from the source (x = 0) to the drai
    <div align="center">
    dia:14 Channel Voltage
   </div>
-   </div>
-
-Under these conditions, the MOSFET operates in the linear region. For small values of (Vds), the drain current varies approximately linearly with (Vds).<br>
+   </div><br>
+    Under these conditions, the MOSFET operates in the linear region. For small values of (Vds), the drain current varies approximately linearly with (Vds).<br>
     When (Vgs-Vds= Vt), the gate-to-channel voltage at the drain end becomes exactly equal to the threshold voltage needed to sustain inversion. At this point, the drain-side surface is just entering inversion and the inversion charge density there reduces to zero.Because the inversion layer vanishes at the drain end, the channel no longer reaches all the way to the drain terminal. This condition is known as pinch-off.<br>
     Even though the channel is pinched off at the drain side, current flow does not cease. Charge carriers that arrive at the pinch-off point are accelerated through the depletion region toward the drain by the strong electric field present there. Consequently, the drain current stops increasing linearly with (Vds).<br>
      <div align="center">
@@ -204,17 +206,19 @@ Under these conditions, the MOSFET operates in the linear region. For small valu
       </div>
       </div><br>
         When ( Vds) becomes greater than (Vgs-Vt), the MOSFET operates in the saturation region. Under this condition, the drain end can no longer maintain inversion, leading to pinch-off close to the drain terminal.<br>
-        Because the channel potential varies along its length, it reduces the effective gate-to-channel voltage locally. The effective overdrive voltage at any position (x) in the channel is ( Vgs- V(x)). As the channel voltage (V(x)) rises from the source toward the drain, the inversion charge density gradually decreases in that direction.<br>
+        Because the channel potential varies along its length, it reduces the effective gate-to-channel voltage locally. The effective overdrive voltage at any position (x) in the channel is ( Vgs- V(x)).<br>
+        As the channel voltage (V(x)) rises from the source toward the drain, the inversion charge density gradually decreases in that direction.<br>
 If (Vds) is increased further beyond (Vgs-Vt), the pinch-off point shifts slightly toward the source end of the channel.<br>
 
 ### 9-L6 Drain current model for saturation region of operation <br>
    When the condition (VGS − VDS) ≤ Vt is met the inversion layer vanishes near the drain terminal.<br>
-In the saturation region, the channel potential is roughly fixed at (Vgs-Vt), whereas in the linear (ohmic) region, the channel voltage changes gradually along the channel length as a function of position (V(x)).<br>
+   In the saturation region, the channel potential is roughly fixed at (Vgs-Vt), whereas in the linear (ohmic) region, the channel voltage changes gradually along the channel length as a function of position (V(x)).<br>
    Under ideal saturation conditions (ignoring channel-length modulation), the drain current no longer depends on (Vds). Instead, it is primarily controlled by the overdrive voltage (Vgs-Vt).
 The drain current in saturation can therefore be expressed as:<br>
 <img width="180" height="59" alt="image" src="https://github.com/user-attachments/assets/ef275299-5ff4-41c9-952e-6e44bd7b2591" /><br>
 <img width="223" height="169" alt="image" src="https://github.com/user-attachments/assets/6330c9d7-585a-44cf-9379-ff45016eb6cd" /><br>
-   When we reduce the channel length the drain current increases that will occur due to velocity saturation.while looking at the formula the drain current is fuction of all constant but that's not true. The effective conductive channel length is modulated by applied Vds.when we increase the Vds depletion region at drain is also increase and the effective channel length decreases.when we are tuning the Vds the channel length is also tune.<br>
+   When we reduce the channel length the drain current increases that will occur due to velocity saturation.while looking at the formula the drain current is fuction of all constant but that's not true.<br> 
+   The effective conductive channel length is modulated by applied Vds.when we increase the Vds depletion region at drain is also increase and the effective channel length decreases.when we are tuning the Vds the channel length is also tune.<br>
     <img width="172" height="26" alt="image" src="https://github.com/user-attachments/assets/9262ab52-72cd-464b-b39b-dcc96ebf1c4e" /><br>
    <div align="center">
    <img width="235" height="182" alt="image" src="https://github.com/user-attachments/assets/7779a53d-7609-4fbd-842b-a1389bdc6e36" />
@@ -222,6 +226,12 @@ The drain current in saturation can therefore be expressed as:<br>
   dia:16 Drain current in MOSFET
     </div>
      </div>
+
+## Introduction to SPICE
+### 10-L1 Basic SPICE setup
+The SPICE is basically a software that have an predefined model, We have to feed the value in that source then the SPICE will derive the waveform for that related value.<br>
+   Create a correct SPICE setup and feed the model to the SPICE engine. The MOSFET we are using having Vds,Vgs and 
+
 
      
 
