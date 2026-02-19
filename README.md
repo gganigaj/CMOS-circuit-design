@@ -93,10 +93,10 @@ The connection of PMOS and NMOS transistor will gives as the output of AND,OR,NA
  </div> <br>
     When we are apply small voltage to the gate,it will repell all the positive charge which is present over the substrate.mobile holes are repelled by the +ve charge at 'G' and they leave behind the -ve charges.The -ve charge will start to accumulate.<br>
 
-### 2-L3 Strong inversion and threshold voltage <br>
-      In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur. <br>
-      Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion.<br>
-The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt).<br>
+### 2-L3 Strong inversion and threshold voltage <br> 
+     In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur. <br>
+      Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion. <br>
+The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt).
  <div align="center">
 <img width="251" height="202" alt="image" src="https://github.com/user-attachments/assets/ba3f74c6-ec46-46af-88d2-1ad7d8d5ef07" />
  <div align="center">
@@ -114,7 +114,7 @@ dia:8 strong inversion
    The above diagram shows that the Vsb=0 and Vsb=+ve value.The +ve Vsb will have the high depletion width compare to the Vsb=0.Because there is a additional reverse bias that is applied to the +Vsb the n-type area is connected to the positive source and p-substrate is connected to the negative souce.<br>
 
 ### 3-L4 Threshold voltage with positive substrate potential <br>
-    On the application of gate voltage to the Vsb=0 and Vsb=+ve.while in Vsb=+ve the depletion region increases the accumulation of negative charge in source is increases. <br>
+ On the application of gate voltage to the Vsb=0 and Vsb=+ve.while in Vsb=+ve the depletion region increases the accumulation of negative charge in source is increases. <br>
     Due to +ve Vsb,few charges from channel are pulled towards source and there is no surface inversion will happen at +ve Vsb. while in Vsb=0 the semiconductor surface inverts to n-type material at voltage Vgs=Vto. <br>
     <div align="center">
     <img width="556" height="232" alt="image" src="https://github.com/user-attachments/assets/b64359ca-a2ce-4791-a924-4afb871dafc1" />
@@ -122,7 +122,7 @@ dia:8 strong inversion
       dia:10 surface inversion 
        </div>
         </div>
-    To make the surface inversion in Vsb +ve the semiconductor surface inverts to n-type material at voltage Vgs=Vto+v1.In the presence of substrate bias 'Vsb',additional potential is required for strong inversion.</br>
+    To make the surface inversion in Vsb +ve the semiconductor surface inverts to n-type material at voltage Vgs=Vto+v1.In the presence of substrate bias 'Vsb',additional potential is required for strong inversion.</br>    
 ![WhatsApp Image 2026-02-18 at 3 21 11 PM](https://github.com/user-attachments/assets/c50135ce-2c1a-4948-86e6-193d0548e64a)<br>
 - Vto is the threshold voltage at Vsb=0
 - γ is the body effect coefficient, which indicates how strongly the threshold voltage changes with body bias. It depends on substrate doping and oxide capacitance.<BR>
