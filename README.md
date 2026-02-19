@@ -94,8 +94,8 @@ The connection of PMOS and NMOS transistor will gives as the output of AND,OR,NA
     When we are apply small voltage to the gate,it will repell all the positive charge which is present over the substrate.mobile holes are repelled by the +ve charge at 'G' and they leave behind the -ve charges.The -ve charge will start to accumulate.<br>
 
 ### 2-L3 Strong inversion and threshold voltage <br> 
-     In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur. <br>
-      Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion. <br>
+   In the pn-junction whenever we are applying reverse bias on the voltage, depletion region will occur. <br>
+   Increasing the gate voltage level,depletion region width is also increase.so that small region in tha p-substrate is converted into n-substrate this phenomenon is called as strong inversion. <br>
 The Vgs voltage at which strong inversion occurs is called threshold voltage(Vt).
  <div align="center">
 <img width="251" height="202" alt="image" src="https://github.com/user-attachments/assets/ba3f74c6-ec46-46af-88d2-1ad7d8d5ef07" />
