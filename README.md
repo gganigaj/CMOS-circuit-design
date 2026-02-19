@@ -67,7 +67,7 @@ The connection of PMOS and NMOS transistor will gives as the output of AND,OR,NA
   The delays are actually comes from the SPICE simulations. The delay models are accurate by having the same input and output load which is matching in the SPICE simulation we get the delay values.<br>
  
   ###  1-L2 Introduction to basic element in Circuit design-NMOS <br>
-   The NMOS is a four terminal device, which consist of P-substrate. if it is PMOS then it will have an N-substrate.
+The NMOS is a four terminal device, which consist of P-substrate. if it is PMOS then it will have an N-substrate.
      <div align="center">
      <img width="559" height="489" alt="Screenshot 2026-02-18 114450" src="https://github.com/user-attachments/assets/a6f35d2a-c338-499c-bf3d-916148da5c9e" />
      <div align="center">
