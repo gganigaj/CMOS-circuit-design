@@ -184,7 +184,7 @@ Therefore, for all values of VDS ≤ (VGS − Vt), the MOSFET operates in the re
    To determine ID for different VGS values, we select one specific VGS and vary VDS from 0 up to (VGS − Vt). Within this range, the drain current is described by the linear-region equation. SPICE simulations can then be performed to generate and confirm the ID–VDS curves corresponding to each chosen VGS.<br>
    <img width="624" height="160" alt="image" src="https://github.com/user-attachments/assets/736002a0-28fd-4709-a2f9-a31958f4fa58" /><br>
 
-   ### 8-L5 Pinch-off region condition<br>
+   ### 8-L5 Pinch-off region condition
    If (Vgs - Vds) remains greater than (Vt), the gate-to-channel voltage at the drain end is still above the threshold level. As a result, an inversion layer is present even near the drain terminal.<br>
 Because inversion charge exists continuously from the source (x = 0) to the drain (x = L), an uninterrupted conductive channel connects the two terminals.<br>
  <div align="center">
@@ -202,18 +202,30 @@ Under these conditions, the MOSFET operates in the linear region. For small valu
        <div align="center">
      dia:15 Pinch_off condition:(VGS − VDS) ≤ Vt
       </div>
-      </div>
-      
-    When ( Vds) becomes greater than (Vgs-Vt), the MOSFET operates in the saturation region. Under this condition, the drain end can no longer maintain inversion, leading to pinch-off close to the drain terminal.<br>
-   Because the channel potential varies along its length, it reduces the effective gate-to-channel voltage locally. The effective overdrive voltage at any position (x) in the channel is ( Vgs- V(x)). As the channel voltage (V(x)) rises from the source toward the drain, the inversion charge density gradually decreases in that direction.<br>
+      </div><br>
+        When ( Vds) becomes greater than (Vgs-Vt), the MOSFET operates in the saturation region. Under this condition, the drain end can no longer maintain inversion, leading to pinch-off close to the drain terminal.<br>
+        Because the channel potential varies along its length, it reduces the effective gate-to-channel voltage locally. The effective overdrive voltage at any position (x) in the channel is ( Vgs- V(x)). As the channel voltage (V(x)) rises from the source toward the drain, the inversion charge density gradually decreases in that direction.<br>
 If (Vds) is increased further beyond (Vgs-Vt), the pinch-off point shifts slightly toward the source end of the channel.<br>
 
 ### 9-L6 Drain current model for saturation region of operation <br>
-   When the condition (VGS − VDS) ≤ Vt,is met, the inversion layer vanishes near the drain terminal.<br>
+   When the condition (VGS − VDS) ≤ Vt is met the inversion layer vanishes near the drain terminal.<br>
 In the saturation region, the channel potential is roughly fixed at (Vgs-Vt), whereas in the linear (ohmic) region, the channel voltage changes gradually along the channel length as a function of position (V(x)).<br>
    Under ideal saturation conditions (ignoring channel-length modulation), the drain current no longer depends on (Vds). Instead, it is primarily controlled by the overdrive voltage (Vgs-Vt).
 The drain current in saturation can therefore be expressed as:<br>
-<img width="180" height="59" alt="image" src="https://github.com/user-attachments/assets/ef275299-5ff4-41c9-952e-6e44bd7b2591" />
+<img width="180" height="59" alt="image" src="https://github.com/user-attachments/assets/ef275299-5ff4-41c9-952e-6e44bd7b2591" /><br>
+<img width="223" height="169" alt="image" src="https://github.com/user-attachments/assets/6330c9d7-585a-44cf-9379-ff45016eb6cd" /><br>
+   When we reduce the channel length the drain current increases that will occur due to velocity saturation.while looking at the formula the drain current is fuction of all constant but that's not true. The effective conductive channel length is modulated by applied Vds.when we increase the Vds depletion region at drain is also increase and the effective channel length decreases.when we are tuning the Vds the channel length is also tune.<br>
+    <img width="172" height="26" alt="image" src="https://github.com/user-attachments/assets/9262ab52-72cd-464b-b39b-dcc96ebf1c4e" /><br>
+   <div align="center">
+   <img width="235" height="182" alt="image" src="https://github.com/user-attachments/assets/7779a53d-7609-4fbd-842b-a1389bdc6e36" />
+    <div align="center">
+  dia:16 Drain current in MOSFET
+    </div>
+     </div>
+
+     
+
+
 
 
 
