@@ -230,10 +230,54 @@ The drain current in saturation can therefore be expressed as:<br>
 ## Introduction to SPICE
 ### 10-L1 Basic SPICE setup
 The SPICE is basically a software that have an predefined model, We have to feed the value in that source then the SPICE will derive the waveform for that related value.<br>
-   Create a correct SPICE setup and feed the model to the SPICE engine. The MOSFET we are using having Vds,Vgs and 
+- Create a correct SPICE setup and feed the model to the SPICE engine. The MOSFET we are using having Vds,Vgs. Using the voltage threshold equation and linear region equation for identify the drain current.<BR>
+- When the MOSFET go for the saturation region and the equation of the drain current is shown below.<br>
+   <img width="217" height="243" alt="image" src="https://github.com/user-attachments/assets/516b389e-129c-41e3-b187-5a1efb679277" /><br>
+- The SPICE model parameters are consider as constant which was highlighted in the above equation. The model parameter are from correct parameter or not want to check to setup the SPICE.<BR>
+- The SPICE parameter and SPICE netlist in the SPICE software we get drain current and voltage axis.<br>
+<div align="center">
+<img width="303" height="246" alt="image" src="https://github.com/user-attachments/assets/b6dd4524-c12a-4a4b-9005-08b5197aeb9d" />
+<div align="center">
+   dia:17 SPICE setup
+  </div>
+    </div><br>
+- In SPICE netlist, the MOSFET logical symbol of the NMOS in that protection resistor,gate voltage is connected and the substrate and source are connected to the ground.<br>
+<div align="center">
+<img width="220" height="128" alt="image" src="https://github.com/user-attachments/assets/47da6374-d791-400f-a8f6-de059fbad30c" />
+<div align="center">
+   dia:18 NMOS diagram
+ </div>
+  </div>
+
+### 11-L2 Circuit description in SPICE syntax
+The SPICE also have some synthetical way to stimulate the Spice netlist. For that the first strp is to define the node.<br>
+- Give some values to the component Vin=2.5V, R1=55ohms, M1=1.8u/1.2u, Vdd=2.5V and we have to put this by the way to understand the SPICE engine to create nodes.<br>
+- While coming to define the node there is no obstruction between the wire connected within two component.
+  <div align="center">
+     <img width="275" height="188" alt="image" src="https://github.com/user-attachments/assets/5db139ab-4cda-406b-b45c-9644b7584ba7" />
+<div align="center">
+   dia:19 Nodes
+ </div>
+  </div><br>
+MOSFET lies between four different nodes drain,source,gate and substrate.<br>
+where,<br>
+ M1  = MOSFET<br>
+ Vdd = drain voltage<br>
+ n1  = gate<br>
+ width = 1.8u<br>
+ length = 1.2u<br>
+ R1 in n1 55<br>
+ Vdd 0 to 2.5<br>
+
+ ### 12-L3 Define technology parameters
+ 
+
+ 
 
 
-     
+   
+
+
 
 
 
