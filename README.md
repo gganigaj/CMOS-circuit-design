@@ -311,7 +311,7 @@ The discribtion of the netlist is well understand by the SPICE. The next step is
 ### 15-L1 SPICE simulation for lower nodes<br>
 Let us see the SPICE waveform of W=1.8u, L=1.2u device(W/L=1.5)<br>
 - In the below diagram we have drain current(Id) on y-axis and drain to souce voltage(Vds) on the x-axis.
-- We can see the zero drain current on the x-axis. Where the minimum channel available for the drain current to flow. (when Vgs=0.5v)<br> 
+- We can see the zero drain current on the x-axis. Where the minimum channel available for the drain current to flow. (when Vgs=0.5v)<br>
    <img width="326" height="240" alt="image" src="https://github.com/user-attachments/assets/f743e8e7-d0bc-4a6e-b424-406114bbb11e" />
    <img width="346" height="274" alt="image" src="https://github.com/user-attachments/assets/181bda61-23b4-4548-8870-341b9e647db6" />   
 <div align="center">
