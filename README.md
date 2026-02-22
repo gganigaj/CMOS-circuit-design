@@ -313,19 +313,33 @@ Let us see the SPICE waveform of W=1.8u, L=1.2u device(W/L=1.5)<br>
 - In the below diagram we have drain current(Id) on y-axis and drain to souce voltage(Vds) on the x-axis.
 - We can see the zero drain current on the x-axis. Where the minimum channel available for the drain current to flow. (when Vgs=0.5v)<br>
    <img width="326" height="240" alt="image" src="https://github.com/user-attachments/assets/f743e8e7-d0bc-4a6e-b424-406114bbb11e" />
-   <img width="346" height="274" alt="image" src="https://github.com/user-attachments/assets/181bda61-23b4-4548-8870-341b9e647db6" />   
+       <img width="346" height="274" alt="image" src="https://github.com/user-attachments/assets/181bda61-23b4-4548-8870-341b9e647db6" />   
 <div align="center">
    dia:20 waveform
   </div><br>
   The above diagram show the linear and saturation region (Vds=Vgs-Vt). When the W/L is constant the drain current is same.<br>
   - let us take differt situation ,SPICE waveform: W=0.375u, L=0.25u device (W/L=1.5)
-    
 
+### 16-L2 Drain current vs gate voltage for long and short channel device
+In this lecture the observation of  W=1.8u, L=1.2u device and W=0.375u, L=0.25u device. 
+<div align="center">
+<img width="623" height="265" alt="Screenshot 2026-02-22 183627" src="https://github.com/user-attachments/assets/6dc5dee6-5418-44be-95ac-f603c87e278d" />
+<div align="center">
+   dia:21 observation from waveform
+  </div>
+</div><br>
+From the above diagram we can see that, The drain current at each and every gate voltage at this shows the quadratic dependence.From the saturation region of drain current will prove that it is quadratic region. <br>
 
- 
+### Comparison Between Long-Channel and Short-Channel MOSFET Behavior
 
+| Effect                     | Long Device (W=1.8µm, L=1.2µm)                              | Short Device (W=0.375µm, L=0.25µm)                                  |
+|----------------------------|--------------------------------------------------------------|-----------------------------------------------------------------------|
+| Id–Vgs Behavior            | More quadratic; closely follows square-law model            | Deviation from square-law due to velocity saturation                 |
+| Saturation Region Shape    | Strong and well-defined saturation                          | Softer saturation; gradual transition                                |
+| Output Resistance (ro)     | High output resistance; flatter saturation curve            | Lower output resistance; noticeable slope in saturation              |
+| Id–Vds Slope in Saturation | Nearly flat (ideal quadratic behavior)                      | Sloped due to channel length modulation                              |
+| Overall Device Behavior    | Approximates ideal long-channel square-law MOSFET          | Exhibits short-channel effects; quasi-linear characteristics         |<br>
 
-   
 
 
 
