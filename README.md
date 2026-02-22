@@ -294,12 +294,15 @@ As model for pmos,<br>
 - The discribtion of the netlist is well understand by the SPICE. The next step is to give the model for the nmos. For the nmos we have the constant values of Vth,Id(linear and saturation region). and the model parameter which already define in previous lecture.<br>
 - The similar way is used for pmos.
    <div align="center">
-      
-  <div align="center">
+  <img width="545" height="372" alt="Screenshot 2026-02-22 124422" src="https://github.com/user-attachments/assets/e2e8804d-317b-4ced-a665-0353a7f29d1d" />
+
+<div align="center">
    dia:19 Simulation code
   </div>
     </div><br>
      <div align="center">
+        <img width="551" height="415" alt="Screenshot 2026-02-22 124534" src="https://github.com/user-attachments/assets/164c9118-a823-45d2-a4cd-25d0a1bb8235" />
+
     <div align="center">
    dia:20 Simulation diagram
   </div>
