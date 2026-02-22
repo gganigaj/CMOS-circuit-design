@@ -269,8 +269,25 @@ where,<br>
  R1 in n1 55<br>
  Vdd 0 to 2.5<br>
 
- ### 12-L3 Define technology parameters
+ ### 12-L3 Define technology parameters<br>
+- In this lecture is about model of NMOS SPICE. For this model we need some parameters like constant value, Which we done in previous chapter.The model code what we mention is as same as SPICE netlist.The attribute name is <br>
+- In netlist,<br>
+M1 Vdd n1 0 0 nmos W=1.8u L=1,2u<br>
+R1 in n1 55<br>
+Vdd Vdd 0 2.5<br>
+Vin in 0 2.5<br>
+- In model,<br>
+.MODEL nmos NMOS (TOX = ..+ VTHO = .. UO = .. GAMMA1 = ..)<br>
+As model for pmos,<br>
+.MODEL pmos PMOS (TOX = ..+ VTHO = .. UO = .. GAMMA1 = ..)<br>
+- The above list is huge so create one library cmos model and name the model file. Herethe file stores like model.mod to be in a package line file.
+ <div align="center">
  
+ <div align="center">
+   dia:18 Simulation commands
+  </div>
+    </div><br>
+
 
  
 
