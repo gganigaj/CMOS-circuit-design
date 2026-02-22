@@ -277,16 +277,34 @@ R1 in n1 55<br>
 Vdd Vdd 0 2.5<br>
 Vin in 0 2.5<br>
 - In model,<br>
-.MODEL nmos NMOS (TOX = ..+ VTHO = .. UO = .. GAMMA1 = ..)<br>
+.MODEL nmos NMOS (TOX = ..+ VTHO = .. U0 = .. GAMMA1 = ..)<br>
 As model for pmos,<br>
-.MODEL pmos PMOS (TOX = ..+ VTHO = .. UO = .. GAMMA1 = ..)<br>
+.MODEL pmos PMOS (TOX = ..+ VTHO = .. U0 = .. GAMMA1 = ..)<br>
 - The above list is huge so create one library cmos model and name the model file. Herethe file stores like model.mod to be in a package line file.
  <div align="center">
- 
- <div align="center">
+ <img width="314" height="312" alt="Screenshot 2026-02-22 101331" src="https://github.com/user-attachments/assets/c685fd80-2ed5-42f7-9dd7-50ee1bbea811" />
+<div align="center">
    dia:18 Simulation commands
   </div>
     </div><br>
+- The first list is consider as "netlist discription" and next list as ".include xxxx_lum_model.mod". The simulation command is based on the way of voltage what we given.<br>
+- Here the voltage is 2.5, we need to sweep the voltage 0 to 2.5v.
+
+### 13-L4 First SPICE simulation and 14_L5 SPICE Lab with sky130 models
+- The discribtion of the netlist is well understand by the SPICE. The next step is to give the model for the nmos. For the nmos we have the constant values of Vth,Id(linear and saturation region). and the model parameter which already define in previous lecture.<br>
+- The similar way is used for pmos.
+   <div align="center">
+      
+  <div align="center">
+   dia:19 Simulation code
+  </div>
+    </div><br>
+     <div align="center">
+    <div align="center">
+   dia:20 Simulation diagram
+  </div>
+    </div><br>
+
 
 
  
