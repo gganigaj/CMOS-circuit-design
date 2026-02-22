@@ -197,8 +197,8 @@ Because inversion charge exists continuously from the source (x = 0) to the drai
   </div>
    </div><br>
     Under these conditions, the MOSFET operates in the linear region. For small values of (Vds), the drain current varies approximately linearly with (Vds).<br>
-    When (Vgs-Vds= Vt), the gate-to-channel voltage at the drain end becomes exactly equal to the threshold voltage needed to sustain inversion. At this point, the drain-side surface is just entering inversion and the inversion charge density there reduces to zero.Because the inversion layer vanishes at the drain end, the channel no longer reaches all the way to the drain terminal. This condition is known as pinch-off.<br>
-    Even though the channel is pinched off at the drain side, current flow does not cease. Charge carriers that arrive at the pinch-off point are accelerated through the depletion region toward the drain by the strong electric field present there. Consequently, the drain current stops increasing linearly with (Vds).<br>
+- When (Vgs-Vds= Vt), the gate-to-channel voltage at the drain end becomes exactly equal to the threshold voltage needed to sustain inversion. At this point, the drain-side surface is just entering inversion and the inversion charge density there reduces to zero.Because the inversion layer vanishes at the drain end, the channel no longer reaches all the way to the drain terminal. This condition is known as pinch-off.<br>
+- Even though the channel is pinched off at the drain side, current flow does not cease. Charge carriers that arrive at the pinch-off point are accelerated through the depletion region toward the drain by the strong electric field present there. Consequently, the drain current stops increasing linearly with (Vds).<br>
      <div align="center">
      <img width="593" height="293" alt="image" src="https://github.com/user-attachments/assets/e57f7900-a9f4-4f51-a729-48102de42900" />
        <div align="center">
@@ -206,19 +206,19 @@ Because inversion charge exists continuously from the source (x = 0) to the drai
       </div>
       </div><br>
         When ( Vds) becomes greater than (Vgs-Vt), the MOSFET operates in the saturation region. Under this condition, the drain end can no longer maintain inversion, leading to pinch-off close to the drain terminal.<br>
-        Because the channel potential varies along its length, it reduces the effective gate-to-channel voltage locally. The effective overdrive voltage at any position (x) in the channel is ( Vgs- V(x)).<br>
-        As the channel voltage (V(x)) rises from the source toward the drain, the inversion charge density gradually decreases in that direction.<br>
+- Because the channel potential varies along its length, it reduces the effective gate-to-channel voltage locally. The effective overdrive voltage at any position (x) in the channel is ( Vgs- V(x)).<br>
+-  As the channel voltage (V(x)) rises from the source toward the drain, the inversion charge density gradually decreases in that direction.<br>
 If (Vds) is increased further beyond (Vgs-Vt), the pinch-off point shifts slightly toward the source end of the channel.<br>
 
 ### 9-L6 Drain current model for saturation region of operation <br>
    When the condition (VGS − VDS) ≤ Vt is met the inversion layer vanishes near the drain terminal.<br>
-   In the saturation region, the channel potential is roughly fixed at (Vgs-Vt), whereas in the linear (ohmic) region, the channel voltage changes gradually along the channel length as a function of position (V(x)).<br>
-   Under ideal saturation conditions (ignoring channel-length modulation), the drain current no longer depends on (Vds). Instead, it is primarily controlled by the overdrive voltage (Vgs-Vt).
+- In the saturation region, the channel potential is roughly fixed at (Vgs-Vt), whereas in the linear (ohmic) region, the channel voltage changes gradually along the channel length as a function of position (V(x)).<br>
+- Under ideal saturation conditions (ignoring channel-length modulation), the drain current no longer depends on (Vds). Instead, it is primarily controlled by the overdrive voltage (Vgs-Vt).
 The drain current in saturation can therefore be expressed as:<br>
 <img width="180" height="59" alt="image" src="https://github.com/user-attachments/assets/ef275299-5ff4-41c9-952e-6e44bd7b2591" /><br>
 <img width="223" height="169" alt="image" src="https://github.com/user-attachments/assets/6330c9d7-585a-44cf-9379-ff45016eb6cd" /><br>
-   When we reduce the channel length the drain current increases that will occur due to velocity saturation.while looking at the formula the drain current is fuction of all constant but that's not true.<br> 
-   The effective conductive channel length is modulated by applied Vds.when we increase the Vds depletion region at drain is also increase and the effective channel length decreases.when we are tuning the Vds the channel length is also tune.<br>
+- When we reduce the channel length the drain current increases that will occur due to velocity saturation.while looking at the formula the drain current is fuction of all constant but that's not true.<br> 
+- The effective conductive channel length is modulated by applied Vds.when we increase the Vds depletion region at drain is also increase and the effective channel length decreases.when we are tuning the Vds the channel length is also tune.<br>
     <img width="172" height="26" alt="image" src="https://github.com/user-attachments/assets/9262ab52-72cd-464b-b39b-dcc96ebf1c4e" /><br>
    <div align="center">
    <img width="235" height="182" alt="image" src="https://github.com/user-attachments/assets/7779a53d-7609-4fbd-842b-a1389bdc6e36" />
@@ -286,8 +286,8 @@ As model for pmos,<br>
 <div align="center">
    dia:18 Simulation commands
   </div>
-    </div><br>
-- The first list is consider as "netlist discription" and next list as ".include xxxx_lum_model.mod". The simulation command is based on the way of voltage what we given.<br>
+    </div>
+The first list is consider as "netlist discription" and next list as ".include xxxx_lum_model.mod". The simulation command is based on the way of voltage what we given.<br>
 - Here the voltage is 2.5, we need to sweep the voltage 0 to 2.5v.
 
 ### 13-L4 First SPICE simulation and 14_L5 SPICE Lab with sky130 models<br>
@@ -316,9 +316,9 @@ Let us see the SPICE waveform of W=1.8u, L=1.2u device(W/L=1.5)<br>
        <img width="346" height="274" alt="image" src="https://github.com/user-attachments/assets/181bda61-23b4-4548-8870-341b9e647db6" />   
 <div align="center">
    dia:20 waveform
-  </div><br>
-  The above diagram show the linear and saturation region (Vds=Vgs-Vt). When the W/L is constant the drain current is same.<br>
-  - let us take differt situation ,SPICE waveform: W=0.375u, L=0.25u device (W/L=1.5)
+  </div>
+The above diagram show the linear and saturation region (Vds=Vgs-Vt). When the W/L is constant the drain current is same.
+let us take differt situation ,SPICE waveform: W=0.375u, L=0.25u device (W/L=1.5)
 
 ### 16-L2 Drain current vs gate voltage for long and short channel device
 In this lecture the observation of  W=1.8u, L=1.2u device and W=0.375u, L=0.25u device. 
