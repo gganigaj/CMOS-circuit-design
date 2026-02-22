@@ -302,11 +302,15 @@ As model for pmos,<br>
     </div><br>
      <div align="center">
         <img width="551" height="415" alt="Screenshot 2026-02-22 124534" src="https://github.com/user-attachments/assets/164c9118-a823-45d2-a4cd-25d0a1bb8235" />
-
-    <div align="center">
+<div align="center">
    dia:20 Simulation diagram
   </div>
     </div><br>
+
+## NgspiceSky130-Day 2-Velocity saturation and basics of CMOS inverter VTC<BR>
+### ***SPICE simulation for lower nodes and velocity saturation effect***<br>
+### 15-L1 SPICE simulation for lower nodes<br>
+
 
 
 
