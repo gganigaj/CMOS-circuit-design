@@ -290,9 +290,8 @@ As model for pmos,<br>
 - The first list is consider as "netlist discription" and next list as ".include xxxx_lum_model.mod". The simulation command is based on the way of voltage what we given.<br>
 - Here the voltage is 2.5, we need to sweep the voltage 0 to 2.5v.
 
-### 13-L4 First SPICE simulation and 14_L5 SPICE Lab with sky130 models
-- The discribtion of the netlist is well understand by the SPICE. The next step is to give the model for the nmos. For the nmos we have the constant values of Vth,Id(linear and saturation region). and the model parameter which already define in previous lecture.<br>
-- The similar way is used for pmos.
+### 13-L4 First SPICE simulation and 14_L5 SPICE Lab with sky130 models<br>
+The discribtion of the netlist is well understand by the SPICE. The next step is to give the model for the nmos. For the nmos we have the constant values of Vth,Id(linear and saturation region). and the model parameter which already define in previous lecture.The similar way is used for pmos.
    <div align="center">
   <img width="545" height="372" alt="Screenshot 2026-02-22 124422" src="https://github.com/user-attachments/assets/e2e8804d-317b-4ced-a665-0353a7f29d1d" />
 
@@ -310,8 +309,15 @@ As model for pmos,<br>
 ## NgspiceSky130-Day 2-Velocity saturation and basics of CMOS inverter VTC<BR>
 ### ***SPICE simulation for lower nodes and velocity saturation effect***<br>
 ### 15-L1 SPICE simulation for lower nodes<br>
-
-
+Let us see the SPICE waveform of W=1.8u, L=1.2u device(W/L=1.5)<br>
+- In the below diagram we have drain current(Id) on y-axis and drain to souce voltage(Vds) on the x-axis.
+- We can see the zero drain current on the x-axis. Where the minimum channel available for the drain current to flow. (when Vgs=0.5v)<br> 
+<div align="center">
+   <img width="326" height="240" alt="image" src="https://github.com/user-attachments/assets/f743e8e7-d0bc-4a6e-b424-406114bbb11e" />
+<div align="center">
+   dia:20 waveform
+  </div>
+    </div><br>
 
 
  
