@@ -341,10 +341,54 @@ From the above diagram we can see that, The drain current at each and every gate
 | Overall Device Behavior    | Approximates ideal long-channel square-law MOSFET          | Exhibits short-channel effects; quasi-linear characteristics         |<br>
 <img width="689" height="541" alt="Screenshot 2026-02-23 092147" src="https://github.com/user-attachments/assets/395e7840-012c-48c7-813b-637b915dd958" />
 <img width="682" height="536" alt="Screenshot 2026-02-23 092558" src="https://github.com/user-attachments/assets/245b2170-3d38-4634-9525-271ae9900d20" />
+<img width="642" height="620" alt="Screenshot 2026-02-23 094636" src="https://github.com/user-attachments/assets/463885a5-f387-4b3c-9d8c-ad468eb49bb1" />
+<img width="639" height="620" alt="Screenshot 2026-02-23 094731" src="https://github.com/user-attachments/assets/37237736-bee0-434e-8b32-e9e5ccfb0f8a" />
 <div align="center">
    dia:22 simulation waveform
   </div>
 </div><br>
+
+### 17-L3 Velocity saturation at lower and higher electric fields
+<div align="center">
+<img width="627" height="294" alt="Screenshot 2026-02-23 095145" src="https://github.com/user-attachments/assets/25021a6a-7368-4a9a-8580-3b90afb3a3a3" />
+<div align="center">
+   dia:23 simulation waveform
+  </div>
+</div>
+
+### velocity saturation effect
+velocity Vn(x)=mobility.electric field<br>
+At higher fields, velocity becomes constant due to scattering effect.
+<img width="227" height="165" alt="Screenshot 2026-02-23 095712" src="https://github.com/user-attachments/assets/44b6693d-5f1d-42dc-af41-a39360308469" />
+<div align="center">
+   dia:24 velocity saturation
+  </div>
+</div>There is a boundary over the graph 
+<img width="369" height="250" alt="image" src="https://github.com/user-attachments/assets/de1bc3ca-3c1c-4057-be99-fe4c12adea22" /><br>
+<img width="203" height="39" alt="image" src="https://github.com/user-attachments/assets/0c9e8b96-9e45-4a20-b5e2-190813f12ae0" /><br>
+<img width="401" height="102" alt="image" src="https://github.com/user-attachments/assets/10d169c7-006d-4d91-9009-1a04f578c466" /><br>
+## Velocity Saturation Effect: Long Channel vs Short Channel MOSFET
+
+| Parameter                  | Long Channel MOSFET (> 250 nm)                | Short Channel MOSFET (< 250 nm)                |
+|----------------------------|-----------------------------------------------|-----------------------------------------------|
+| Electric Field in Channel  | Relatively low                                | Very high                                     |
+| Carrier Velocity           | v_d = μE (linear with electric field)         | Quickly reaches saturation velocity (v_sat)   |
+| Velocity Saturation        | Negligible                                    | Significant                                   |
+| Drain Current Equation     | I_D ∝ (V_GS − V_T)² (Square-law behavior)    | I_D ∝ (V_GS − V_T) (Linear dependence)        |
+| Current Limiting Mechanism | Pinch-off at drain end                        | Velocity saturation near source               |
+| Saturation Region Cause    | Channel pinch-off                             | Carriers reach saturation velocity (v_sat)    |
+| Transconductance (g_m)     | Higher (strong quadratic dependence)          | Reduced due to velocity saturation             |
+| Output Characteristics     | Clear quadratic characteristics               | More linear, reduced gain                     |
+| Device Performance         | Predictable classical behavior                | Limited by high-field effects                 |
+| Dominant Physical Model    | Long-channel model                            | High-field transport model                    |
+
+
+
+
+
+
+
+
 
 
 
