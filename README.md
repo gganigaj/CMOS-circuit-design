@@ -381,8 +381,9 @@ At higher fields, velocity becomes constant due to scattering effect.
 | Transconductance (g_m)     | Higher (strong quadratic dependence)          | Reduced due to velocity saturation             |
 | Output Characteristics     | Clear quadratic characteristics               | More linear, reduced gain                     |
 | Device Performance         | Predictable classical behavior                | Limited by high-field effects                 |
-| Dominant Physical Model    | Long-channel model                            | High-field transport model                    |
-When Id=0 for Vgt<0,cutoff mode and for all other modes,lets use the below model.
+| Dominant Physical Model    | Long-channel model                            | High-field transport model                    |<br>
+<br>
+When Id=0 for Vgt<0,cutoff mode and for all other modes,lets use the below model.<br>
 <img width="206" height="45" alt="Screenshot 2026-02-23 101411" src="https://github.com/user-attachments/assets/4fbd186b-28b1-4494-87a9-2782a0ba41a1" /><br>
 
 ### 18-L4 Velocity saturation drain current model
@@ -421,6 +422,22 @@ for lower region its showing quadratic behaviour and for higher region it shows 
 </div>
 
 ### 22-L2 Introduction to standard MOS voltage current parameters
+- In a CMOS circuit, the output node and the load capacitor are driven by a pair of complementary transistors: one PMOS and one NMOS. These two devices operate in opposite states to control the output voltage.
+- When the input voltage Vin is equal to Vdd logic HIGH, the NMOS and PMOS act as complementary switches. For the NMOS transistor, the gate to source voltage Vgs = Vin - Vss = Vdd, which exceeds its threshold voltage. As a result, the NMOS turns ON and behaves like a low-resistance path to ground. A drain-to-source current flows through it, creating a discharge path for the output node.
+- At the same time, the PMOS transistor has both its gate and source terminals close to Vdd. Therefore, its gate to source voltage is approximately zero, which is smaller than the magnitude of its threshold voltage. This keeps the PMOS in the OFF state, effectively acting as an open circuit. Consequently, there is no conductive path from Vdd to the output node.
+- Because of this complementary action, the load capacitor discharges through the conducting NMOS transistor, causing the output voltage Vout to drop to 0 logic LOW.<br>
+<div align="center">
+<img width="831" height="418" alt="Screenshot 2026-02-23 105614" src="https://github.com/user-attachments/assets/98a834d6-d54c-4c4e-8ec3-eef36db95cc7" />
+<div align="center">
+   dia:28 MOS Voltage and Current character
+  </div>
+</div>
+
+### 23-L3 PMOS/NMOS drain current vs drain voltage
+The naming conversion of volyage across NMOS and PMOS. 
+
+
+
 
 
 
