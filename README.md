@@ -293,14 +293,14 @@ The first list is consider as "netlist discription" and next list as ".include x
 ### 13-L4 First SPICE simulation and 14_L5 SPICE Lab with sky130 models<br>
 The discribtion of the netlist is well understand by the SPICE. The next step is to give the model for the nmos. For the nmos we have the constant values of Vth,Id(linear and saturation region). and the model parameter which already define in previous lecture.The similar way is used for pmos.
    <div align="center">
-  <img width="545" height="372" alt="Screenshot 2026-02-22 124422" src="https://github.com/user-attachments/assets/e2e8804d-317b-4ced-a665-0353a7f29d1d" />
-
+ <img width="953" height="525" alt="Screenshot 2026-02-23 075557" src="https://github.com/user-attachments/assets/23ea6e21-8aa2-472d-8052-9e10eba3f7ad" />
 <div align="center">
    dia:19 Simulation code
   </div>
     </div><br>
      <div align="center">
-        <img width="551" height="415" alt="Screenshot 2026-02-22 124534" src="https://github.com/user-attachments/assets/164c9118-a823-45d2-a4cd-25d0a1bb8235" />
+        <img width="913" height="542" alt="Screenshot 2026-02-23 075617" src="https://github.com/user-attachments/assets/14c2b035-8f81-4527-b827-317e1bb02634" />
+
 <div align="center">
    dia:20 Simulation diagram
   </div>
@@ -339,8 +339,12 @@ From the above diagram we can see that, The drain current at each and every gate
 | Output Resistance (ro)     | High output resistance; flatter saturation curve            | Lower output resistance; noticeable slope in saturation              |
 | Id–Vds Slope in Saturation | Nearly flat (ideal quadratic behavior)                      | Sloped due to channel length modulation                              |
 | Overall Device Behavior    | Approximates ideal long-channel square-law MOSFET          | Exhibits short-channel effects; quasi-linear characteristics         |<br>
-
-
+<img width="689" height="541" alt="Screenshot 2026-02-23 092147" src="https://github.com/user-attachments/assets/395e7840-012c-48c7-813b-637b915dd958" />
+<img width="682" height="536" alt="Screenshot 2026-02-23 092558" src="https://github.com/user-attachments/assets/245b2170-3d38-4634-9525-271ae9900d20" />
+<div align="center">
+   dia:22 simulation waveform
+  </div>
+</div><br>
 
 
 
