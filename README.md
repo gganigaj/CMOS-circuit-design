@@ -466,7 +466,11 @@ The Vin and the Id value will shift the graph plot<br>
   </div>
 </div><br>
 
-### 
+### 25-L5 Step2 & Step3-convert PMOS and NMOS drain-source-voltage to Vout
+In this we are converting the Vdsp and Idsn to Vout.<br>
+Vout=Vdd+Vdsp<br>
+- if the vdsp is negative 2v then we add positive 2v we get the Vout.now the Vout will be zero.when the Vout is zero we can see the finite current flowing.
+- Let us obtain the load curve for NMOS transistor using the above equations:
 
 
 
