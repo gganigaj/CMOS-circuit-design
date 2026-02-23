@@ -363,11 +363,12 @@ At higher fields, velocity becomes constant due to scattering effect.
 <div align="center">
    dia:24 velocity saturation
   </div>
-</div>There is a boundary over the graph 
-<img width="369" height="250" alt="image" src="https://github.com/user-attachments/assets/de1bc3ca-3c1c-4057-be99-fe4c12adea22" /><br>
+</div>There is a boundary over the graph<br> 
+<img width="172" height="29" alt="Screenshot 2026-02-23 100033" src="https://github.com/user-attachments/assets/48c06b7a-005f-4b1c-8e43-69c3651c89ec" /><br>
 <img width="203" height="39" alt="image" src="https://github.com/user-attachments/assets/0c9e8b96-9e45-4a20-b5e2-190813f12ae0" /><br>
 <img width="401" height="102" alt="image" src="https://github.com/user-attachments/assets/10d169c7-006d-4d91-9009-1a04f578c466" /><br>
-## Velocity Saturation Effect: Long Channel vs Short Channel MOSFET
+
+### Velocity Saturation Effect: Long Channel vs Short Channel MOSFET
 
 | Parameter                  | Long Channel MOSFET (> 250 nm)                | Short Channel MOSFET (< 250 nm)                |
 |----------------------------|-----------------------------------------------|-----------------------------------------------|
@@ -381,6 +382,56 @@ At higher fields, velocity becomes constant due to scattering effect.
 | Output Characteristics     | Clear quadratic characteristics               | More linear, reduced gain                     |
 | Device Performance         | Predictable classical behavior                | Limited by high-field effects                 |
 | Dominant Physical Model    | Long-channel model                            | High-field transport model                    |
+When Id=0 for Vgt<0,cutoff mode and for all other modes,lets use the below model.
+<img width="206" height="45" alt="Screenshot 2026-02-23 101411" src="https://github.com/user-attachments/assets/4fbd186b-28b1-4494-87a9-2782a0ba41a1" /><br>
+
+### 18-L4 Velocity saturation drain current model
+We know that Vdsat is a technology parameter that we will get from Fab.Substituting Vgs-Vt in the simpler equation. Means Vgt is Minimum and behaves in a saturation regime.When Vds is Minimum, it behaves in a resistive regime.<br>
+<img width="291" height="46" alt="Screenshot 2026-02-23 102242" src="https://github.com/user-attachments/assets/571f9cdf-b581-42e4-ab87-42f02ee0b4f8" /><br>
+<img width="296" height="32" alt="Screenshot 2026-02-23 102436" src="https://github.com/user-attachments/assets/4408f479-7c9a-4beb-95bd-2eaeec4e2d3e" /><br>
+We can have Vdsat minimum for lower nodes devices, so that is only applicable to devices length <250nm.<br>
+<img width="556" height="76" alt="Screenshot 2026-02-23 102551" src="https://github.com/user-attachments/assets/bbd46ff8-ccc6-439f-a72b-40f3d4df9a12" />
+
+### 19-L5 Labs Sky130 Id-Vgs
+<div align="center">
+<img width="394" height="396" alt="Screenshot 2026-02-23 103207" src="https://github.com/user-attachments/assets/90669cd8-ecb1-4230-bf75-dab2e1df94df" />
+<div align="center">
+   dia:25 velocity saturation simulation (Id vs Vdd)
+  </div>
+</div><br>
+for lower region its showing quadratic behaviour and for higher region it shows linear behaviour. 
+
+ ### 20-L6 Labs Sky130 Vt
+ <div align="center">
+ <img width="489" height="394" alt="Screenshot 2026-02-23 103830" src="https://github.com/user-attachments/assets/ba140985-8c11-47a6-9de4-1793ee0486bf" />
+ <div align="center">
+   dia:26 threshold voltage (Id vs Vgs)
+  </div>
+</div>
+
+### ***CMOS voltage transfer characteristics(VTC)***<br>
+### 21- L1 MOSFET as a switch
+- A MOSFET used as a switching device operates in two basic modes that are controlled by the gate voltage: the OFF state acting like an open circuit and the ON state acting like a closed circuit.
+- For switching applications, the device is intentionally driven either completely ON or completely OFF to control current flow efficiently, rather than operating in the intermediate region where it would function as an amplifier.
+<div align="center">
+<img width="527" height="331" alt="Screenshot 2026-02-23 104642" src="https://github.com/user-attachments/assets/62c77c70-0399-498b-8fc8-54cfc98c5224" />
+<div align="center">
+   dia:27 MOS device character
+  </div>
+</div>
+
+### 22-L2 Introduction to standard MOS voltage current parameters
+
+
+
+ 
+
+
+
+
+
+
+
 
 
 
