@@ -434,8 +434,49 @@ for lower region its showing quadratic behaviour and for higher region it shows 
 </div>
 
 ### 23-L3 PMOS/NMOS drain current vs drain voltage
-The naming conversion of volyage across NMOS and PMOS. 
+- The naming conversion of volyage across NMOS and PMOS. The current direction is totally inverse, when Vin = Vdd,Vout =0.
+- For the charge discharge, when Vin = 0,Vout = Vdd. While going to euqtion it shows everything which we go around digital circuits is based on what the input voltage we are giving and what the output voltage we are getting.<br>
+For voltage observation<br>
+<img width="119" height="107" alt="image" src="https://github.com/user-attachments/assets/902a26dc-6a17-433c-9d5c-50b598ae2d51" />
+<img width="88" height="44" alt="image" src="https://github.com/user-attachments/assets/3a950233-89b0-49a9-9f33-22b76cd3d468" /><br>
+The positive Idsp is inverted to negative Idsn and there is negative potential for PMOS.<br>
+<img width="418" height="219" alt="image" src="https://github.com/user-attachments/assets/6b748eb7-e434-42d7-88db-9f7943c89d8b" /><br>
 
+### 24-L4 Step 1-Convert PMOS gate-souce-voltage to Vin
+- From the Id-Vd curve of the CMOS, while we are seeing in inverting view there will be only Vin and Vout. In that way we can able relate the value of Vin and Vout.<br>
+<div align="center">
+<img width="622" height="339" alt="image" src="https://github.com/user-attachments/assets/357ea955-c79f-43b3-b586-9d5fc119bd44" />
+<div align="center">
+   dia:29 MOS Voltage and Current in CMOS
+  </div>
+</div><br>
+Below are the steps to obtain voltage transfer characteristics(VTC) for static CMOS inverter:<br>
+let us assume below values(Vdd = 2v)
+<img width="75" height="120" alt="image" src="https://github.com/user-attachments/assets/e81650ed-42e4-4e33-a084-39c8e1dbc374" /><br>
+In one table of Vgsp and its five different value of Vgsp. The load is going to lower for using Vdd in the equation(Vin).<br>
+
+### Vin=Vgsp+Vdd
+For calculating Vin we have Vdd value and Vgsp value to substitute it.
+<img width="180" height="115" alt="image" src="https://github.com/user-attachments/assets/b6a416e5-5468-4ae4-a29f-750c41824caf" />
+The Vin and the Id value will shift the graph plot<br>
+<div align="center">
+<img width="182" height="183" alt="image" src="https://github.com/user-attachments/assets/ff582fef-f48f-4ec4-aadb-04f16e371775" />
+<div align="center">
+   dia:30 CMOS -Vdsp vs Idsn
+  </div>
+</div><br>
+
+### 
+
+
+
+
+
+
+
+
+
+  
 
 
 
