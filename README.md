@@ -451,13 +451,13 @@ The positive Idsp is inverted to negative Idsn and there is negative potential f
   </div>
 </div><br>
 Below are the steps to obtain voltage transfer characteristics(VTC) for static CMOS inverter:<br>
-let us assume below values(Vdd = 2v)
+let us assume below values(Vdd = 2v)<br>
 <img width="75" height="120" alt="image" src="https://github.com/user-attachments/assets/e81650ed-42e4-4e33-a084-39c8e1dbc374" /><br>
 In one table of Vgsp and its five different value of Vgsp. The load is going to lower for using Vdd in the equation(Vin).<br>
 
 ### Vin=Vgsp+Vdd
-For calculating Vin we have Vdd value and Vgsp value to substitute it.
-<img width="180" height="115" alt="image" src="https://github.com/user-attachments/assets/b6a416e5-5468-4ae4-a29f-750c41824caf" />
+For calculating Vin we have Vdd value and Vgsp value to substitute it.<br>
+<img width="180" height="115" alt="image" src="https://github.com/user-attachments/assets/b6a416e5-5468-4ae4-a29f-750c41824caf" /><br>
 The Vin and the Id value will shift the graph plot<br>
 <div align="center">
 <img width="182" height="183" alt="image" src="https://github.com/user-attachments/assets/ff582fef-f48f-4ec4-aadb-04f16e371775" />
@@ -469,7 +469,7 @@ The Vin and the Id value will shift the graph plot<br>
 ### 25-L5 Step2 & Step3-convert PMOS and NMOS drain-source-voltage to Vout
 In this we are converting the Vdsp and Idsn to Vout.<br>
 Vout=Vdd+Vdsp<br>
-- if the vdsp is negative 2v then we add positive 2v we get the Vout.now the Vout will be zero.when the Vout is zero we can see the finite current flowing.
+- if the vdsp is negative 2v then we add positive 2v we get the Vout.now the Vout will be zero.when the Vout is zero we can see the finite current flowing.<br>
 <div align="center">
 <img width="624" height="196" alt="Screenshot 2026-02-24 085411" src="https://github.com/user-attachments/assets/641a44f5-a5fa-4087-8f0b-3da117c150c9" />
 <div align="center">
@@ -507,6 +507,11 @@ The load curve of NMOS, PMOS transistor and CMOS inverter to get the voltage cha
    dia:34 CMOS curve
   </div>
 </div><br>
+
+## NgspiceSky130-Day 3-CNOS switching threshold and dynamic simulations
+### ***Voltage transfer characteristics-SPICE simulations***
+### 27-L1 SPICE deck creation for CMOS inverter
+
 
 
 
