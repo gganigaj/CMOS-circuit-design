@@ -470,7 +470,47 @@ The Vin and the Id value will shift the graph plot<br>
 In this we are converting the Vdsp and Idsn to Vout.<br>
 Vout=Vdd+Vdsp<br>
 - if the vdsp is negative 2v then we add positive 2v we get the Vout.now the Vout will be zero.when the Vout is zero we can see the finite current flowing.
-- Let us obtain the load curve for NMOS transistor using the above equations:
+<div align="center">
+<img width="624" height="196" alt="Screenshot 2026-02-24 085411" src="https://github.com/user-attachments/assets/641a44f5-a5fa-4087-8f0b-3da117c150c9" />
+<div align="center">
+   dia:31 Vout
+  </div>
+</div><br>
+TRhe above curve is the load curve for PMOS transistor.<br>
+Let us obtain the load curve for NMOS transistor using the equations:<br>
+Vgsn=Vin-Vss='Vin'<br>
+Vdsn=Vout<br>
+The load curve of NMOS, PMOS transistor and CMOS inverter to get the voltage characteristics. 
+
+### 26-L6 Step4-Merge PMOS-NMOS load curves and plot VTC
+- We will superimpose the load curve of NMOS on the load curve of PMOS because the Vin ande Vout are common to our PMOS and NMOS. There is a intersection between the PMOS and NMOS curve.
+<div align="center">
+<img width="619" height="195" alt="Screenshot 2026-02-24 092256" src="https://github.com/user-attachments/assets/58c0ac4f-b00d-442a-86cd-e33d54b30863" />
+<div align="center">
+   dia:32 loard curve transistor
+  </div>
+</div><br>
+
+- When Vin is 0, Then the PMOS is on and the NMOS is off. In that case we take Vin=0 line curve of both transistor and find the common point.
+- We suoperimpose both the curve and derive the VTC for the CMOS inverter. The range of voltage we are looking is 0 to 2v.
+<div align="center"> 
+ <img width="604" height="179" alt="Screenshot 2026-02-24 093605" src="https://github.com/user-attachments/assets/e3b6670e-6d4a-4ab1-ad21-491295d89790" />
+ <div align="center">
+   dia:33 Intersection curve
+  </div>
+</div><br>
+- We have the graph of Vout from 0 to 2v and the Vin for 0 to 2v. Vin and Vout are common to PMOS and NMOS.
+- Graphically, we will pick up Vin points from the intersection of corresponding load lines. PMOS is in linear region and NMOS is cutoff region.
+ <div align="center">
+<img width="207" height="169" alt="Screenshot 2026-02-24 094157" src="https://github.com/user-attachments/assets/f7725d6e-9053-4a97-aac6-96b1ea6d70fd" />
+ <div align="center">
+   dia:34 CMOS curve
+  </div>
+</div><br>
+
+
+
+
 
 
 
