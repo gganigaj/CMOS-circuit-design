@@ -632,6 +632,84 @@ There is 96% energy reduction.<br>
 
 ### ***Static behaviour evaluation-CMOS inverter robustness-Device variation***
 ### 44-L1 Source of variation-Etching process
+The Etching process is behave with the single inverter.<br>
+<div align="center">
+<img width="318" height="187" alt="Screenshot 2026-02-24 180524" src="https://github.com/user-attachments/assets/d888faad-2b66-402a-b2e5-c5fcb7e2605b" /><br>
+<img width="177" height="197" alt="Screenshot 2026-02-24 180720" src="https://github.com/user-attachments/assets/0d4964a5-bb27-489b-9eca-ba4968eb03c9" />
+<div align="center">
+   Layout design
+  </div>
+</div><br>
+In the layout of single inverter there will be Vdd,p Diff,n Diff,Vout,Vin,Vss.The chain is inverter having multiple number same layout design arrangement.The clock and D flipflop is taking place.<br>
+<div align="center">
+<img width="583" height="297" alt="Screenshot 2026-02-24 181239" src="https://github.com/user-attachments/assets/689fcaac-5334-4f5d-b6ab-91dd1915aed5" />
+<div align="center">
+   chain of inverter
+  </div>
+</div><br>
+<div align="center">
+In the fabrication process the ideal mask will distorted in actual mask because of etching. The gates in middle area of inverter have same structure on either side in the layout.<br>
+<img width="596" height="301" alt="Screenshot 2026-02-24 181933" src="https://github.com/user-attachments/assets/8827c4d3-087d-4d48-8b61-3492689095d4" />
+<div align="center">
+   ideal and actual mask
+  </div>
+</div><br>
+<img width="354" height="83" alt="Screenshot 2026-02-24 182335" src="https://github.com/user-attachments/assets/df1ae901-8999-490c-b692-4cd67beacf29" />
+
+### 45-L2 Sources of variation-oxide thickness
+While taking the single inverter as example and we see the cross section of the inverter. In that gate oxide,poly si or metal gate and substrate.<br>
+<div align="center">
+<img width="582" height="226" alt="Screenshot 2026-02-24 182745" src="https://github.com/user-attachments/assets/6047cb25-2b4f-42d5-bdff-703c62a13af3" />
+<div align="center">
+   cross section of inverter
+  </div>
+</div><br>
+In the ideal case of oxidation process the gate oxide thickness is constant throughout the channel. In real case its not constant along the gate line.<br>
+<img width="416" height="98" alt="Screenshot 2026-02-24 183351" src="https://github.com/user-attachments/assets/f4fc9d8e-132c-462a-82b2-606a8e09e564" />
+<img width="337" height="81" alt="Screenshot 2026-02-24 183558" src="https://github.com/user-attachments/assets/652619d7-c314-4ac1-97a1-1bad8477353b" />
+
+### 46-L3 Smart SPICE simulation for device variations
+- The change in the drain current will affects the drain current. Basically the CMOS simulation is least response to the device variation.<br>
+***strong PMOS*** this has least resistive when increase the size and highest width can fabricated. Wp=1.875u.<br>
+***weak NMOS***this has high resistive when increase the size and least width can fabricated.Wn=0.375u.<br>
+<img width="162" height="100" alt="Screenshot 2026-02-24 184805" src="https://github.com/user-attachments/assets/4c578cf7-5d58-4b6e-b458-5f6210e05957" /><br>  
+***strong NMOS*** this has least resistive when increase the size and highest width can fabricated. Wp=1.875.<br>
+***weak PMOS***this has high resistive when increase the size and least width can fabricated.Wn=0.375u.<br>
+<img width="153" height="101" alt="Screenshot 2026-02-24 184845" src="https://github.com/user-attachments/assets/c8d510cf-0424-49b2-8838-6a19ccf1094d" /><br>
+<div align="center">
+<img width="367" height="301" alt="Screenshot 2026-02-24 185009" src="https://github.com/user-attachments/assets/10d520f9-dd5d-48de-99bf-dca191c5794a" />
+<div align="center">
+   SPICE simulation
+  </div>
+</div><br>
+
+### 47-L4 Conclusion
+- The strong PMOS and the weak NMOS is sweeped into weak PMOS and strong NMOS.
+- For switching threshold point, cross the curve of 45degree and identify the both points on the curve in which Vin=Vout.
+- The switching threshold shift is very less in Vm.
+- There is a variation in the noise margin level.<br>
+<img width="448" height="259" alt="Screenshot 2026-02-24 190051" src="https://github.com/user-attachments/assets/f33bd082-6307-4631-9c7f-5b6282186b40" /><br>
+
+### 48-L5 Sky130 Device Variation Labs
+The output Vtt for long duration when compare to ground, The switching threshold shifted towards right, so we can say this has strong PMOS and weak NMOS.<br>
+Vt=0.988v<br>
+<img width="693" height="529" alt="Screenshot 2026-02-24 190607" src="https://github.com/user-attachments/assets/4be95221-a57d-40ac-a195-1b5c97ac49d1" />
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
 
 
 
