@@ -577,7 +577,7 @@ Noise margin is basically define the input voltage range and the output voltage 
 - The first value we are plotted on the scale is that Voh and then Vih.
 - less than Vil is Vol so after Vih thenext is Vil and then VOL.
 - In Voh and Vih the noise margin is very high.(Voh-Vih)
-- In Vil and Vol the noise margin is very low(Vil-Vol).these are the noise margin which will decide the tolerance of noise.
+- In Vil and Vol the noise margin is very low(Vil-Vol).these are the noise margin which will decide the tolerance of noise.<br>
   <img width="137" height="163" alt="image" src="https://github.com/user-attachments/assets/45e95139-9a58-4922-a977-17c9dca7222c" /><br>
 - The region between the two area are the undefined region.  For any signal to be considered as logic 0 and logic1, it should be in the NMl and NMh ranges respectively.
 
