@@ -544,6 +544,51 @@ Inverse VTC<br>
 Vth=0.876v<br>
 For rise delay and fall delay
 
+## NgspiceSky130-Day 4-CMOS Noise Margin robustness evaluation
+### ***Static behavior evaluaion-CMOS inverter robustness-Noise margin***
+### 36-L1 Introduction to noise margin
+This chapter is about understanding noise margin of any of the transistor.<br>
+***Noise margin:*** In CMOS digital circuits is the measure of how much unwanted noise a signal can tolerate without causing a logic error. It indicates the robustness of a logic gate against voltage disturbances.<br>
+In digital logic, signals are interpreted as:
+- Logic 1 (HIGH)
+- Logic 0 (LOW)
+The output drop will not be instant but its gradual resulit of final slope. The Vil is low input voltage. Any input voltage level between 0 and Vil will be treated as logic 0.<br>
+<div align="center">
+<img width="357" height="167" alt="Screenshot 2026-02-24 143843" src="https://github.com/user-attachments/assets/0372020d-7359-46f5-834a-96fa51cd9ce5" />
+<div align="center">
+   dia:36 Noise margin
+  </div>
+</div><br>
+
+### 37-L2 Noise margin voltage parameters
+- Any voltage which lies between Vin and Vil will recognise as logic 0 and the output is high
+- Any voltage which is above Vil will recognise as logic 1 and the output is low.
+- Actual characteristics of a inverter the change in input voltage is positive and the change in output voltage is negative.
+- Vol shouild be less than Vil then only recognise logic 0.
+ <div align="center"> 
+<img width="351" height="172" alt="Screenshot 2026-02-24 145231" src="https://github.com/user-attachments/assets/c160ca38-9025-4d55-90f6-d4dc75d91de6" />
+<div align="center">
+   dia:37  characteristics of a inverter
+  </div>
+</div><br>
+
+### 38-L3 Noise margin equation and summary
+Noise margin is basically define the input voltage range and the output voltage range.(Voh>Vih)
+- The first value we are plotted on the scale is that Voh and then Vih.
+- less than Vil is Vol so after Vih thenext is Vil and then VOL.
+- In Voh and Vih the noise margin is very high.(Voh-Vih)
+- In Vil and Vol the noise margin is very low(Vil-Vol).these are the noise margin which will decide the tolerance of noise.
+  <img width="137" height="163" alt="image" src="https://github.com/user-attachments/assets/45e95139-9a58-4922-a977-17c9dca7222c" /><br>
+- The region between the two area are the undefined region.  For any signal to be considered as logic 0 and logic1, it should be in the NMl and NMh ranges respectively.
+
+### 39-L4 Noise margin variation with respect to PMOS width
+Lets take the Dc trnasfer characteristic for an PMOS = NMOS. Point on that slope which shows negative one. Here the noise margin high is 0.3v and the noise margin low is 0.3v.
+- The PMOS and NMOS width is sustain in the high and low margin then it will be logic 1.
+- 
+
+
+
+
 
 
 
