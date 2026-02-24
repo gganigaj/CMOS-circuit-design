@@ -542,6 +542,8 @@ Wn=Wp=0.375u,Wp=0.9375,Ln,p=0.255u device<br>
 Inverse VTC<br>
 <img width="689" height="536" alt="Screenshot 2026-02-24 110449" src="https://github.com/user-attachments/assets/f423ef77-a74d-4e4e-aa41-15efd57b80bc" /><br>
 Vth=0.876v<br>
+For rise delay and fall delay
+
 
 
 
