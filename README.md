@@ -584,7 +584,63 @@ Noise margin is basically define the input voltage range and the output voltage 
 ### 39-L4 Noise margin variation with respect to PMOS width
 Lets take the Dc trnasfer characteristic for an PMOS = NMOS. Point on that slope which shows negative one. Here the noise margin high is 0.3v and the noise margin low is 0.3v.
 - The PMOS and NMOS width is sustain in the high and low margin then it will be logic 1.
-- 
+- To increase the noise margin variation in PMOS in that slope we can see the diagram in that the noise will we increased by 0.5v.
+- Then the NMh is 0.35 and NMl is 0.3. When we increased the PMOS size the resistance path of size is low.
+- Increase the PMOS width as thrice of NMOS so that the noise margin will getting high. PMOS is the one which is holding the logic one for the output capacitance.
+- And the NMOS is the one which is holding logic zero on the output capacitance. While increasing the PMOS width the noise margin will also be increasing.
+  <div align="center">
+  <img width="505" height="249" alt="Screenshot 2026-02-24 154734" src="https://github.com/user-attachments/assets/c9ee7bf1-f71e-4207-8b7c-6303b15751ba" />
+  <div align="center">
+   dia:38 Static behaviour evaluation
+  </div>
+</div><br>
+The static behaviour evaluation of CMOS inverter robustness of noise margin NMl,NMh<br>
+lets see the tabulation which has width and length of both NMOS and PMOS and the resultant voltage. The noise morgin from both NMOS and PMOS both are used in the digital design and the intermediate state is used as an analog design.
+<img width="433" height="266" alt="Screenshot 2026-02-24 155526" src="https://github.com/user-attachments/assets/0f1146a2-92d5-4941-88e0-11414caaae2c" />
+
+### 40-L5 Sky130 Noise margin labs
+<img width="699" height="521" alt="Screenshot 2026-02-24 160258" src="https://github.com/user-attachments/assets/c57a03a5-aa78-493a-bcf0-9ace3a13bdee" /><br>
+
+<img width="719" height="519" alt="Screenshot 2026-02-24 160524" src="https://github.com/user-attachments/assets/3f1c18a9-0003-4867-b9a6-726730b90d05" /><br>
+Noise margin high will be 0.733<br>
+Noise margin low will be 0.659<br>
+
+## NgspiceSky130-Day 5-CMOS power supply and device variation robustness evaluation
+### ***Static behaviour evaluation-CMOS inverter robustness-power supply variation***
+### 41-L1 Smart SPICE simulation for power supply variations
+The ststic behaviour evaluation of CMOS inverter robustness of power supply scaling
+- Let us consider an inverter which has PMOS and NMOS for spice simulation and kept that Wp=0.9375u and Wn=0.375u.(Vdd=2.5)
+- let as take the same PMOS and NMOS and sweep the supply of voltage from Vdd=2.5 to 1v.
+- In this, what the main target is the CMOS inverter gain should not to be change. For that we are doing smart spice simulation.
+<img width="554" height="288" alt="Screenshot 2026-02-24 162204" src="https://github.com/user-attachments/assets/26774f7a-eafb-489c-baac-6a75b6f78802" /><br>
+<img width="369" height="299" alt="Screenshot 2026-02-24 162426" src="https://github.com/user-attachments/assets/d47b505b-ec0a-46e0-8213-8b66ef01356f" /><br>
+
+### 42-L2 Advantage and disadvantage using low supply voltage
+***Gain factor:*** The change in output to the input. Here the operater 2v and 0.5v gain is 7.38 and 11.53. There is a 56% improvement in the gain.<br>
+***Energy:*** <img width="112" height="55" alt="Screenshot 2026-02-24 163803" src="https://github.com/user-attachments/assets/072dbde3-b547-4d71-99ec-96ddeb8a35ae" /><br>
+There is 96% energy reduction.<br>
+***Delay*** Rise delay and fall delay is 66ps and 78ps.<br>
+***The advantages of using 0.5v supply***<br>
+- Increase in gain close to 50% of improvement
+- Significant reduction in energy close to 90% improvement<br>
+***Disadvantages***
+  - Performance impact in the performance.
+ 
+### 43-L3 Sky130 Supply Variation Labs
+<img width="692" height="539" alt="Screenshot 2026-02-24 165434" src="https://github.com/user-attachments/assets/90a7526d-b600-48c8-9f80-fc414e5ef156" /><br>
+<img width="718" height="473" alt="Screenshot 2026-02-24 165831" src="https://github.com/user-attachments/assets/5a6c91da-f98c-4600-ae5e-b44eae1ecb55" />
+
+### ***Static behaviour evaluation-CMOS inverter robustness-Device variation***
+### 44-L1 Source of variation-Etching process
+
+
+
+
+
+
+
+
+
 
 
 
