@@ -511,6 +511,41 @@ The load curve of NMOS, PMOS transistor and CMOS inverter to get the voltage cha
 ## NgspiceSky130-Day 3-CNOS switching threshold and dynamic simulations
 ### ***Voltage transfer characteristics-SPICE simulations***
 ### 27-L1 SPICE deck creation for CMOS inverter
+Before the simulation first we want to create the SPICE deck.<br>
+SPICE deck: The connectivity information about the netlist.
+- The significance of the arrow will show the M1 PMOS and M2 NMOS in the diagram.
+- The significance of the substrate voltage it tunes the threshold voltage of PMOS and NMOS.
+  <div align="center">
+  <img width="250" height="215" alt="Screenshot 2026-02-24 101416" src="https://github.com/user-attachments/assets/163d7395-2e78-45de-b65f-29c1f64b5889" />
+   <div align="center">
+   dia:35 CMOS circuit
+  </div>
+</div><br>
+
+- The source of PMOS is connected to Vdd and the source of NMOS is connected to Vss. The value of output load capacitance is connected.
+- Next is component values and connect the voltage.
+- Then define the node between two component and identity it. The m1 is completely define PMOS ans m2 is for NMOS.<br>
+<img width="316" height="117" alt="Screenshot 2026-02-24 101704" src="https://github.com/user-attachments/assets/375acbae-97d6-4136-8167-ee32ffda849a" /><br>
+
+### 28-L2 SPICE simulation for CMOS inverter
+The capacitance load for the the below CMOS circuit is 0 to 10f and the Vdd and Vin is 0 to 2.5v.<br>
+<img width="591" height="231" alt="Screenshot 2026-02-24 102433" src="https://github.com/user-attachments/assets/220fd68a-2498-4aaa-9cfa-0d06b761a0c8" />
+### SPICE waveform:
+Wn=Wp=0.375u,Ln,p=0.25u device<br>
+(Wn/Ln=Wp/Lp=1.5)<br>
+<img width="441" height="350" alt="Screenshot 2026-02-24 104117" src="https://github.com/user-attachments/assets/a4a80340-7715-403b-8d4f-0401386ba84b" /><br>
+Wn=Wp=0.375u,Wp=0.9375,Ln,p=0.255u device<br>
+(Wn/Ln=Wp/Lp=1.5, Wp/Lp=2.5)<br>
+<img width="441" height="355" alt="Screenshot 2026-02-24 105249" src="https://github.com/user-attachments/assets/5cfff85f-d6ef-4471-8d48-f16b8094af79" /><br>
+
+### 29-L3 Labs Sky130 SPICE simulation for CMOS
+Inverse VTC<br>
+<img width="689" height="536" alt="Screenshot 2026-02-24 110449" src="https://github.com/user-attachments/assets/f423ef77-a74d-4e4e-aa41-15efd57b80bc" /><br>
+Vth=0.876v<br>
+
+
+
+
 
 
 
