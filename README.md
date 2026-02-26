@@ -543,6 +543,8 @@ Inverse VTC<br>
 <img width="689" height="536" alt="Screenshot 2026-02-24 110449" src="https://github.com/user-attachments/assets/f423ef77-a74d-4e4e-aa41-15efd57b80bc" /><br>
 Vth=0.876v<br>
 For rise delay and fall delay
+<img width="487" height="398" alt="Screenshot 2026-02-26 114300" src="https://github.com/user-attachments/assets/3e02e7a8-fd3c-402d-af6b-207d020f57c1" />
+
 
 ## NgspiceSky130-Day 4-CMOS Noise Margin robustness evaluation
 ### ***Static behavior evaluaion-CMOS inverter robustness-Noise margin***
