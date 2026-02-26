@@ -695,8 +695,19 @@ In the ideal case of oxidation process the gate oxide thickness is constant thro
 ### 48-L5 Sky130 Device Variation Labs
 The output Vtt for long duration when compare to ground, The switching threshold shifted towards right, so we can say this has strong PMOS and weak NMOS.<br>
 Vt=0.988v<br>
-<img width="693" height="529" alt="Screenshot 2026-02-24 190607" src="https://github.com/user-attachments/assets/4be95221-a57d-40ac-a195-1b5c97ac49d1" />
+<img width="693" height="529" alt="Screenshot 2026-02-24 190607" src="https://github.com/user-attachments/assets/4be95221-a57d-40ac-a195-1b5c97ac49d1" /><br>
+A point x0 = 0.988209, y0 = 0.988191 is obtained
 
+### Conclusion 
+During this course, I had the opportunity to deeply understand the working of MOSFETs and CMOS inverters. I explored different techniques to modify inverter characteristics and studied how these changes influence performance. I gained hands-on experience in writing a SPICE deck from a SPICE netlist and running simulations to analyze circuit behavior. Additionally, I developed a clear understanding of CMOS voltage transfer characteristics (VTC) and the various parameters that impact them. I also learned how to evaluate static behavior and its related subtopics in detail.<br>
+
+The lab sessions were especially engaging, as the simulation plots encouraged me to think critically about how altering specific SPICE parameters would affect the output results. Overall, the workshop inspired me to strengthen my fundamentals in MOSFET concepts and motivated me to explore VLSI design further. My experience with VLSI System Design was truly enriching, thanks to the continuous guidance and support provided throughout the program.<br>
+
+
+### References
+- https://github.com/kunalg123/sky130CircuitDesignWorkshop
+- https://www.vsdiat.com/
+- https://github.com/kunalg123/vsdflow
 
 
 
