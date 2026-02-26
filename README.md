@@ -2,10 +2,10 @@
 
 # CMOS circuit design and SPICE simulations using sky130
 ## Table Of Contents
-- [NgspiceSky130-Day1-Basics of NMOS Drain Current(Id) vs Drain-to-source Voltage(Vds)](#NgspiceSky130-Day1-Basics-of-NMOS-Drain-Current(Id)-vs-Drain-to-source-Voltage(Vds))
-  - [Introduction to Circuit Design and Spice Simulations](#Introduction-to-Circuit-Design-and-Spice-Simulations)
-    - [L1 Why do we need SPICE simulations?](#L1-Why-do-we-need-SPICE-simulations?)
-    - [L2 Introduction to basic element in circuit design-NMOS](#L2-Introduction-to-basic-element-in-circuit-design-NMOS)
+- [NgspiceSky130-Day 1-Basics of NMOS Drain Current(Id) vs Drain-to-source Voltage(Vds)](#NgspiceSky130-Day-1-Basics-of-NMOS-Drain-Current(Id)-vs-Drain-to-source-Voltage(Vds))
+  - [Introduction to Circuit Design and SPICE simulations](#Introduction-to-Circuit-Design-and-SPICE-simulations)
+    - [0-L1 Why do we need SPICE simulations?](#0-L1-Why-do-we-need-SPICE-simulations?)
+    - [1-L2 Introduction to basic element in circuit design-NMOS](#L2-Introduction-to-basic-element-in-circuit-design-NMOS)
     - [L3 Strong inversion and threshold voltage](#L3-Strong-inversion-and-threshold-voltage)
     - [L4 Threshold voltage with positive substrate potential](#L4-Threshold-voltage-with-positive-substrate-potential)
     - [NMOS resistive region and Saturation region of operation](#NMOS-resistive-region-and-Saturation-region-of-operation)
@@ -91,7 +91,7 @@ Version	: Ubuntu 18.04 Bionic Beaver (64-bit)
 ### 5. Start the virtual mode
 - select the created VM
 - click start
-## NgspiceSky130-Day 1-Basics of NMOS Drain current(Id) vs Drain-to-source voltage(Vds)<br>
+## NgspiceSky130-Day 1-Basics of NMOS Drain current(Id) vs Drain-to-source voltage(Vds)
 ### **Introduction to Circuit Design and SPICE simulation**
 ### 0-L1 Why do we need SPICE simulations?<br>
    About circuit,let as cosider an inverter which has PMOS and NMOS.the drain of both are tigh together and the voltage is connected to both NMOS AND PMOS.<br>
