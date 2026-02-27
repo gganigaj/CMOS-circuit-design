@@ -199,18 +199,18 @@ dia:8 strong inversion
 
 ## NMOS resistive region and saturation region of operation<br>
 ### 4-L1 Resistive region of operation with small drain-source voltage<br>
-  when the Vgs>Vt ,the channel width will increases more and it shows the induced charges(Qi) is proportional to the (Vgs-Vt).This excess voltage, known as the overdrive voltage, creates additional mobile electrons in the channel, increasing the drain current.<br>
+ -  when the Vgs>Vt ,the channel width will increases more and it shows the induced charges(Qi) is proportional to the (Vgs-Vt).This excess voltage, known as the overdrive voltage, creates additional mobile electrons in the channel, increasing the drain current.
    <div align="center">
-  <img width="347" height="236" alt="image" src="https://github.com/user-attachments/assets/8e478cc9-8522-45e7-8697-5cc33e3bf689" />
+   <img width="347" height="236" alt="image" src="https://github.com/user-attachments/assets/8e478cc9-8522-45e7-8697-5cc33e3bf689" />
    <div align="center">
    dia:11 Induced charges
     </div>
    </div>
-- Let  Vgs=1V , small Vds(0.05V) and Vt(NMOS)=0.45V.Since VGS > Vt, the transistor is ON and a conducting inversion channel is formed between source and drain.Because the source is grounded and the drain is at a positive voltage, a voltage gradient develops along the channel from source to drain.
-- If we plot a graph with the x-axis as the channel length (from 0 to L, considering L ≈ Leff) and the y-axis representing channel charge/strength:
-- In the absence of VDS, every point along the channel sees the same gate overdrive voltage (VGS − Vt).<br>
+  - Let  Vgs=1V , small Vds(0.05V) and Vt(NMOS)=0.45V.Since VGS > Vt, the transistor is ON and a conducting inversion channel is formed between source and drain.Because the source is grounded and the drain is at a positive voltage, a voltage gradient develops along the channel from source to drain.<br>
+  - If we plot a graph with the x-axis as the channel length (from 0 to L, considering L ≈ Leff) and the y-axis representing channel charge/strength:<br>
+   - In the absence of VDS, every point along the channel sees the same gate overdrive voltage (VGS − Vt).<br>
         When VDS is applied, the local channel potential becomes V(x), which varies from 0 at the source to VDS at the drain.<br>
-        Therefore, the effective overdrive at any point x becomes (VGS − V(x) − Vt), meaning the channel charge gradually decreases from source to drain.
+        Therefore, the effective overdrive at any point x becomes (VGS − V(x) − Vt), meaning the channel charge gradually decreases from source to drain.<br>
         <div align="center">
         <img width="334" height="237" alt="image" src="https://github.com/user-attachments/assets/0ead9e30-68d9-41c6-b59a-5a38b5402866" />
           <div align="center">
@@ -461,6 +461,8 @@ We can have Vdsat minimum for lower nodes devices, so that is only applicable to
 
 ### 19-L5 Labs Sky130 Id-Vgs
 <div align="center">
+  <img width="1366" height="768" alt="Screenshot 2026-02-27 094713" src="https://github.com/user-attachments/assets/9fa77b4c-7e2a-46fd-8885-d05292c69137" />
+<div align="center">
 <img width="394" height="396" alt="Screenshot 2026-02-23 103207" src="https://github.com/user-attachments/assets/90669cd8-ecb1-4230-bf75-dab2e1df94df" />
 <div align="center">
    dia:25 velocity saturation simulation (Id vs Vdd)
@@ -469,6 +471,8 @@ We can have Vdsat minimum for lower nodes devices, so that is only applicable to
 for lower region its showing quadratic behaviour and for higher region it shows linear behaviour. 
 
  ### 20-L6 Labs Sky130 Vt
+ <div align="center">
+   <img width="1366" height="768" alt="Screenshot 2026-02-27 095229" src="https://github.com/user-attachments/assets/657186f2-ae80-4e92-86dc-3ec42f088d45" />
  <div align="center">
  <img width="489" height="394" alt="Screenshot 2026-02-23 103830" src="https://github.com/user-attachments/assets/ba140985-8c11-47a6-9de4-1793ee0486bf" />
  <div align="center">
@@ -608,6 +612,8 @@ Wn=Wp=0.375u,Wp=0.9375,Ln,p=0.255u device<br>
 Inverse VTC<br>
 <img width="689" height="536" alt="Screenshot 2026-02-24 110449" src="https://github.com/user-attachments/assets/f423ef77-a74d-4e4e-aa41-15efd57b80bc" /><br>
 Vth=0.876v<br>
+<img width="1366" height="768" alt="Screenshot 2026-02-27 095510" src="https://github.com/user-attachments/assets/0789d255-c170-450d-9c1c-90ab2ff46800" /><br>
+<img width="1366" height="768" alt="Screenshot 2026-02-27 095802" src="https://github.com/user-attachments/assets/58968e20-19ea-4cbc-8f36-688ba0d6116e" /><br>
 For rise delay and fall delay
 <img width="487" height="398" alt="Screenshot 2026-02-26 114300" src="https://github.com/user-attachments/assets/3e02e7a8-fd3c-402d-af6b-207d020f57c1" />
 
