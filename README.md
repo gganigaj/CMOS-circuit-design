@@ -206,9 +206,8 @@ dia:8 strong inversion
    dia:11 Induced charges
     </div>
    </div>
-   Let  Vgs=1V , small Vds(0.05V) and Vt(NMOS)=0.45V.<br>
--  Since VGS > Vt, the transistor is ON and a conducting inversion channel is formed between source and drain.Because the source is grounded and the drain is at a positive voltage, a voltage gradient develops along the channel from source to drain.<br>
-If we plot a graph with the x-axis as the channel length (from 0 to L, considering L ≈ Leff) and the y-axis representing channel charge/strength:
+- Let  Vgs=1V , small Vds(0.05V) and Vt(NMOS)=0.45V.Since VGS > Vt, the transistor is ON and a conducting inversion channel is formed between source and drain.Because the source is grounded and the drain is at a positive voltage, a voltage gradient develops along the channel from source to drain.
+- If we plot a graph with the x-axis as the channel length (from 0 to L, considering L ≈ Leff) and the y-axis representing channel charge/strength:
 - In the absence of VDS, every point along the channel sees the same gate overdrive voltage (VGS − Vt).<br>
         When VDS is applied, the local channel potential becomes V(x), which varies from 0 at the source to VDS at the drain.<br>
         Therefore, the effective overdrive at any point x becomes (VGS − V(x) − Vt), meaning the channel charge gradually decreases from source to drain.
@@ -231,7 +230,7 @@ channel length(L):The physical distance between the source and drain defined dur
      </div>
      <img width="191" height="200" alt="image" src="https://github.com/user-attachments/assets/4c4e229a-fdd5-49b6-9803-293a8e045a63" /> <br>
 There are two types of current:
-- Drift current - Current that flows due to an applied electric field, which causes charge carriers to move in a specific direction.<br>
+- Drift current - Current that flows due to an applied electric field, which causes charge carriers to move in a specific direction.
 - Diffusion current - Current that flows due to a concentration gradient, where charge carriers move from a region of higher concentration to a region of lower concentration.<br>
 <img width="520" height="297" alt="image" src="https://github.com/user-attachments/assets/2472fe34-2d80-4c54-94bb-312c0deab373" /><br>
 Drift current (Id) = Velocity of charge carriers x Available charge (over the channel width)<br>
@@ -249,8 +248,8 @@ where,<br>
 Therefore, for all values of VDS ≤ (VGS − Vt), the MOSFET operates in the resistive (linear) region.In this region, the channel is continuous from source to drain, and the device behaves like a voltage-controlled resistor.<br>
 
 ### 7-L4 SPICE conclusion to resistive operation<br>
-   To study how the gate-to-source voltage (VGS) and drain-to-source voltage (VDS) affect the drain current (ID), we examine several values of both voltages.     For a fixed VGS, the MOSFET operates in the linear (triode) region as long as VDS is less than (VGS − Vt).<br>
-   To determine ID for different VGS values, we select one specific VGS and vary VDS from 0 up to (VGS − Vt). Within this range, the drain current is described by the linear-region equation. SPICE simulations can then be performed to generate and confirm the ID–VDS curves corresponding to each chosen VGS.<br>
+   - To study how the gate-to-source voltage (VGS) and drain-to-source voltage (VDS) affect the drain current (ID), we examine several values of both voltages.     For a fixed VGS, the MOSFET operates in the linear (triode) region as long as VDS is less than (VGS − Vt).
+   - To determine ID for different VGS values, we select one specific VGS and vary VDS from 0 up to (VGS − Vt). Within this range, the drain current is described by the linear-region equation. SPICE simulations can then be performed to generate and confirm the ID–VDS curves corresponding to each chosen VGS.
    <img width="624" height="160" alt="image" src="https://github.com/user-attachments/assets/736002a0-28fd-4709-a2f9-a31958f4fa58" /><br>
 
    ### 8-L5 Pinch-off region condition
@@ -263,8 +262,8 @@ Because inversion charge exists continuously from the source (x = 0) to the drai
   </div>
    </div><br>
     Under these conditions, the MOSFET operates in the linear region. For small values of (Vds), the drain current varies approximately linearly with (Vds).<br>
-- When (Vgs-Vds= Vt), the gate-to-channel voltage at the drain end becomes exactly equal to the threshold voltage needed to sustain inversion. At this point, the drain-side surface is just entering inversion and the inversion charge density there reduces to zero.Because the inversion layer vanishes at the drain end, the channel no longer reaches all the way to the drain terminal. This condition is known as pinch-off.<br>
-- Even though the channel is pinched off at the drain side, current flow does not cease. Charge carriers that arrive at the pinch-off point are accelerated through the depletion region toward the drain by the strong electric field present there. Consequently, the drain current stops increasing linearly with (Vds).<br>
+    - When (Vgs-Vds= Vt), the gate-to-channel voltage at the drain end becomes exactly equal to the threshold voltage needed to sustain inversion. At this point, the drain-side surface is just entering inversion and the inversion charge density there reduces to zero.Because the inversion layer vanishes at the drain end, the channel no longer reaches all the way to the drain terminal. This condition is known as pinch-off.<br>
+   - Even though the channel is pinched off at the drain side, current flow does not cease. Charge carriers that arrive at the pinch-off point are accelerated through the depletion region toward the drain by the strong electric field present there. Consequently, the drain current stops increasing linearly with (Vds).<br>
      <div align="center">
      <img width="593" height="293" alt="image" src="https://github.com/user-attachments/assets/e57f7900-a9f4-4f51-a729-48102de42900" />
        <div align="center">
@@ -307,7 +306,7 @@ The SPICE is basically a software that have an predefined model, We have to feed
    dia:17 SPICE setup
   </div>
     </div><br>
-- In SPICE netlist, the MOSFET logical symbol of the NMOS in that protection resistor,gate voltage is connected and the substrate and source are connected to the ground.<br>
+In SPICE netlist, the MOSFET logical symbol of the NMOS in that protection resistor,gate voltage is connected and the substrate and source are connected to the ground.<br>
 <div align="center">
 <img width="220" height="128" alt="image" src="https://github.com/user-attachments/assets/47da6374-d791-400f-a8f6-de059fbad30c" />
 <div align="center">
@@ -354,7 +353,7 @@ As model for pmos,<br>
   </div>
     </div>
 The first list is consider as "netlist discription" and next list as ".include xxxx_lum_model.mod". The simulation command is based on the way of voltage what we given.<br>
-- Here the voltage is 2.5, we need to sweep the voltage 0 to 2.5v.
+Here the voltage is 2.5, we need to sweep the voltage 0 to 2.5v.
 
 ### 13-L4 First SPICE simulation and 14_L5 SPICE Lab with sky130 models<br>
 The discribtion of the netlist is well understand by the SPICE. The next step is to give the model for the nmos. For the nmos we have the constant values of Vth,Id(linear and saturation region). and the model parameter which already define in previous lecture.The similar way is used for pmos.
@@ -424,7 +423,8 @@ From the above diagram we can see that, The drain current at each and every gate
 
 ### velocity saturation effect
 velocity Vn(x)=mobility.electric field<br>
-At higher fields, velocity becomes constant due to scattering effect.
+At higher fields, velocity becomes constant due to scattering effect.<br>
+<div align="center">
 <img width="227" height="165" alt="Screenshot 2026-02-23 095712" src="https://github.com/user-attachments/assets/44b6693d-5f1d-42dc-af41-a39360308469" />
 <div align="center">
    dia:24 velocity saturation
@@ -676,10 +676,10 @@ Noise margin low will be 0.659<br>
 ## NgspiceSky130-Day 5-CMOS power supply and device variation robustness evaluation
 ### ***Static behaviour evaluation-CMOS inverter robustness-power supply variation***
 ### 41-L1 Smart SPICE simulation for power supply variations
-The ststic behaviour evaluation of CMOS inverter robustness of power supply scaling
+The static behaviour evaluation of CMOS inverter robustness of power supply scaling
 - Let us consider an inverter which has PMOS and NMOS for spice simulation and kept that Wp=0.9375u and Wn=0.375u.(Vdd=2.5)
 - let as take the same PMOS and NMOS and sweep the supply of voltage from Vdd=2.5 to 1v.
-- In this, what the main target is the CMOS inverter gain should not to be change. For that we are doing smart spice simulation.
+- In this, what the main target is the CMOS inverter gain should not to be change. For that we are doing smart spice simulation.<br>
 <img width="554" height="288" alt="Screenshot 2026-02-24 162204" src="https://github.com/user-attachments/assets/26774f7a-eafb-489c-baac-6a75b6f78802" /><br>
 <img width="369" height="299" alt="Screenshot 2026-02-24 162426" src="https://github.com/user-attachments/assets/d47b505b-ec0a-46e0-8213-8b66ef01356f" /><br>
 
