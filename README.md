@@ -467,6 +467,7 @@ We can have Vdsat minimum for lower nodes devices, so that is only applicable to
 <div align="center">
    dia:25 velocity saturation simulation (Id vs Vdd)
   </div>
+</div>
 </div><br>
 for lower region its showing quadratic behaviour and for higher region it shows linear behaviour. 
 
@@ -479,6 +480,7 @@ for lower region its showing quadratic behaviour and for higher region it shows 
    dia:26 threshold voltage (Id vs Vgs)
   </div>
 </div>
+</div><br>
 
 ### ***CMOS voltage transfer characteristics(VTC)***<br>
 ### 21- L1 MOSFET as a switch
@@ -614,7 +616,7 @@ Inverse VTC<br>
 Vth=0.876v<br>
 <img width="1366" height="768" alt="Screenshot 2026-02-27 095510" src="https://github.com/user-attachments/assets/0789d255-c170-450d-9c1c-90ab2ff46800" /><br>
 <img width="1366" height="768" alt="Screenshot 2026-02-27 095802" src="https://github.com/user-attachments/assets/58968e20-19ea-4cbc-8f36-688ba0d6116e" /><br>
-For rise delay and fall delay
+For rise delay and fall delay<br>
 <img width="487" height="398" alt="Screenshot 2026-02-26 114300" src="https://github.com/user-attachments/assets/3e02e7a8-fd3c-402d-af6b-207d020f57c1" />
 
 
@@ -674,7 +676,7 @@ lets see the tabulation which has width and length of both NMOS and PMOS and the
 
 ### 40-L5 Sky130 Noise margin labs
 <img width="699" height="521" alt="Screenshot 2026-02-24 160258" src="https://github.com/user-attachments/assets/c57a03a5-aa78-493a-bcf0-9ace3a13bdee" /><br>
-
+<img width="1366" height="593" alt="Screenshot 2026-02-27 095802" src="https://github.com/user-attachments/assets/da063e4d-b71d-4849-84cf-629d0952a951" /><br>
 <img width="719" height="519" alt="Screenshot 2026-02-24 160524" src="https://github.com/user-attachments/assets/3f1c18a9-0003-4867-b9a6-726730b90d05" /><br>
 Noise margin high will be 0.733<br>
 Noise margin low will be 0.659<br>
@@ -702,6 +704,7 @@ There is 96% energy reduction.<br>
  
 ### 43-L3 Sky130 Supply Variation Labs
 <img width="692" height="539" alt="Screenshot 2026-02-24 165434" src="https://github.com/user-attachments/assets/90a7526d-b600-48c8-9f80-fc414e5ef156" /><br>
+<img width="1366" height="567" alt="Screenshot 2026-02-27 100847" src="https://github.com/user-attachments/assets/7f82e294-2c0e-468c-b809-0bc66597e139" /><br>
 <img width="718" height="473" alt="Screenshot 2026-02-24 165831" src="https://github.com/user-attachments/assets/5a6c91da-f98c-4600-ae5e-b44eae1ecb55" />
 
 ### ***Static behaviour evaluation-CMOS inverter robustness-Device variation***
@@ -767,6 +770,7 @@ In the ideal case of oxidation process the gate oxide thickness is constant thro
 ### 48-L5 Sky130 Device Variation Labs
 The output Vtt for long duration when compare to ground, The switching threshold shifted towards right, so we can say this has strong PMOS and weak NMOS.<br>
 Vt=0.988v<br>
+<img width="1366" height="570" alt="Screenshot 2026-02-27 101025" src="https://github.com/user-attachments/assets/aa7d839f-6e19-4c13-be72-70e946b5067e" /><br>
 <img width="693" height="529" alt="Screenshot 2026-02-24 190607" src="https://github.com/user-attachments/assets/4be95221-a57d-40ac-a195-1b5c97ac49d1" /><br>
 A point x0 = 0.988209, y0 = 0.988191 is obtained
 
